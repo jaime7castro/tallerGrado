@@ -1,0 +1,235 @@
+2014/10/13 23:52:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "about" was not found.' in /home/jaime/appstecnocastro/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('about')
+#1 /home/jaime/appstecnocastro/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /home/jaime/appstecnocastro/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /home/jaime/appstecnocastro/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /home/jaime/appstecnocastro/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=site/page&view=about
+HTTP_REFERER=http://192.168.43.11/~jaime/AdmGuardia/index.php
+---
+2014/10/13 23:53:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "about" was not found.' in /home/jaime/appstecnocastro/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('about')
+#1 /home/jaime/appstecnocastro/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /home/jaime/appstecnocastro/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /home/jaime/appstecnocastro/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /home/jaime/appstecnocastro/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=site/page&view=about
+HTTP_REFERER=http://192.168.43.11/~jaime/AdmGuardia/index.php?r=site/index
+---
+2014/10/13 23:53:04 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "contact".' in /home/jaime/appstecnocastro/yii/framework/web/CController.php:878
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CController.php(782): CController->renderPartial('contact', Array, true)
+#1 /home/jaime/Public/AdmGuardia/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#2 /home/jaime/appstecnocastro/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionContact()
+#3 /home/jaime/appstecnocastro/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/jaime/appstecnocastro/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/jaime/appstecnocastro/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('contact')
+#7 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contact')
+#8 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=site/contact
+HTTP_REFERER=http://192.168.43.11/~jaime/AdmGuardia/index.php?r=site/page&view=about
+---
+2014/10/13 23:53:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "about" was not found.' in /home/jaime/appstecnocastro/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('about')
+#1 /home/jaime/appstecnocastro/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /home/jaime/appstecnocastro/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /home/jaime/appstecnocastro/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /home/jaime/appstecnocastro/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=site/page&view=about
+HTTP_REFERER=http://192.168.43.11/~jaime/AdmGuardia/index.php?r=site/index
+---
+2014/10/13 23:53:09 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "login".' in /home/jaime/appstecnocastro/yii/framework/web/CController.php:878
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#1 /home/jaime/Public/AdmGuardia/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#2 /home/jaime/appstecnocastro/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#3 /home/jaime/appstecnocastro/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/jaime/appstecnocastro/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/jaime/appstecnocastro/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#7 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#8 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=site/login
+HTTP_REFERER=http://192.168.43.11/~jaime/AdmGuardia/index.php?r=site/page&view=about
+---
+2014/10/13 23:53:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "about" was not found.' in /home/jaime/appstecnocastro/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('about')
+#1 /home/jaime/appstecnocastro/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /home/jaime/appstecnocastro/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /home/jaime/appstecnocastro/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /home/jaime/appstecnocastro/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=site/page&view=about
+HTTP_REFERER=http://192.168.43.11/~jaime/AdmGuardia/index.php?r=site/index
+---
+2014/10/13 23:54:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contactenos".' in /home/jaime/appstecnocastro/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CController.php(270): CController->missingAction('contactenos')
+#1 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('contactenos')
+#2 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contacteno...')
+#3 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=site/contactenos
+HTTP_REFERER=http://192.168.43.11/~jaime/AdmGuardia/index.php?r=site/page&view=areaNaval
+---
+2014/10/13 23:54:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contactenos".' in /home/jaime/appstecnocastro/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CController.php(270): CController->missingAction('contactenos')
+#1 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('contactenos')
+#2 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contacteno...')
+#3 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=site/contactenos
+HTTP_REFERER=http://192.168.43.11/~jaime/AdmGuardia/index.php?r=site/page&view=areaNaval
+---
+2014/10/13 23:54:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "inicioSesion".' in /home/jaime/appstecnocastro/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CController.php(270): CController->missingAction('inicioSesion')
+#1 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('inicioSesion')
+#2 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/inicioSesi...')
+#3 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=site/inicioSesion
+HTTP_REFERER=http://192.168.43.11/~jaime/AdmGuardia/index.php?r=site/contactenos
+---
+2014/10/13 23:54:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "inicioSesion".' in /home/jaime/appstecnocastro/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CController.php(270): CController->missingAction('inicioSesion')
+#1 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('inicioSesion')
+#2 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/inicioSesi...')
+#3 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=site/inicioSesion
+HTTP_REFERER=http://192.168.43.11/~jaime/AdmGuardia/index.php?r=site/inicioSesion
+---
+2014/10/13 23:54:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "inicioSesion".' in /home/jaime/appstecnocastro/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CController.php(270): CController->missingAction('inicioSesion')
+#1 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('inicioSesion')
+#2 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/inicioSesi...')
+#3 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=site/inicioSesion
+HTTP_REFERER=http://192.168.43.11/~jaime/AdmGuardia/index.php?r=site/inicioSesion
+---
+2014/10/13 23:54:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contactenos".' in /home/jaime/appstecnocastro/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CController.php(270): CController->missingAction('contactenos')
+#1 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('contactenos')
+#2 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contacteno...')
+#3 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=site/contactenos
+HTTP_REFERER=http://192.168.43.11/~jaime/AdmGuardia/index.php?r=site/inicioSesion
+---
+2014/10/13 23:54:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contactenos".' in /home/jaime/appstecnocastro/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CController.php(270): CController->missingAction('contactenos')
+#1 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('contactenos')
+#2 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contacteno...')
+#3 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=site/contactenos
+HTTP_REFERER=http://192.168.43.11/~jaime/AdmGuardia/index.php?r=site/page&view=areaNaval
+---
+2014/10/13 23:54:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "inicioSesion".' in /home/jaime/appstecnocastro/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CController.php(270): CController->missingAction('inicioSesion')
+#1 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('inicioSesion')
+#2 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/inicioSesi...')
+#3 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=site/inicioSesion
+HTTP_REFERER=http://192.168.43.11/~jaime/AdmGuardia/index.php?r=site/contactenos
+---
+2014/10/14 00:00:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contactenos".' in /home/jaime/appstecnocastro/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CController.php(270): CController->missingAction('contactenos')
+#1 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('contactenos')
+#2 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contacteno...')
+#3 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=site/contactenos
+HTTP_REFERER=http://192.168.43.11/~jaime/AdmGuardia/index.php?r=site/page&view=areaNaval
+---
+2014/10/14 00:00:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "inicioSesion".' in /home/jaime/appstecnocastro/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CController.php(270): CController->missingAction('inicioSesion')
+#1 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('inicioSesion')
+#2 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/inicioSesi...')
+#3 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=site/inicioSesion
+HTTP_REFERER=http://192.168.43.11/~jaime/AdmGuardia/index.php?r=site/contactenos
+---
+2014/10/14 00:00:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contactenos".' in /home/jaime/appstecnocastro/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CController.php(270): CController->missingAction('contactenos')
+#1 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('contactenos')
+#2 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contacteno...')
+#3 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=site/contactenos
+HTTP_REFERER=http://192.168.43.11/~jaime/AdmGuardia/index.php?r=site/inicioSesion
+---
+2014/10/14 00:04:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contactenos".' in /home/jaime/appstecnocastro/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CController.php(270): CController->missingAction('contactenos')
+#1 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('contactenos')
+#2 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contacteno...')
+#3 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=site/contactenos
+HTTP_REFERER=http://192.168.43.11/~jaime/AdmGuardia/index.php?r=site/page&view=about
+---
+2014/10/14 00:04:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contactenos".' in /home/jaime/appstecnocastro/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CController.php(270): CController->missingAction('contactenos')
+#1 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('contactenos')
+#2 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contacteno...')
+#3 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=site/contactenos
+HTTP_REFERER=http://192.168.43.11/~jaime/AdmGuardia/index.php?r=site/login
+---
