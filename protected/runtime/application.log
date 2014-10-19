@@ -233,3 +233,74 @@ Stack trace:
 REQUEST_URI=/~jaime/AdmGuardia/index.php?r=site/contactenos
 HTTP_REFERER=http://192.168.43.11/~jaime/AdmGuardia/index.php?r=site/login
 ---
+2014/10/19 11:23:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "vTipoActividad".' in /home/jaime/appstecnocastro/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CController.php(270): CController->missingAction('vTipoActividad')
+#1 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('vTipoActividad')
+#2 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/vTipoActiv...')
+#3 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=site/vTipoActividad
+---
+2014/10/19 11:38:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "vCasosUso".' in /home/jaime/appstecnocastro/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CController.php(270): CController->missingAction('vCasosUso')
+#1 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('vCasosUso')
+#2 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/vCasosUso')
+#3 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=site/vCasosUso
+HTTP_REFERER=http://localhost/~jaime/AdmGuardia/index.php?r=site/vTipoActividad
+---
+2014/10/19 12:07:52 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.ui" is not defined.' in /home/jaime/appstecnocastro/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/auth/CWebUser.php(146): CComponent->__get('ui')
+#1 /home/jaime/Public/AdmGuardia/protected/views/site/vCasosUso.php(13): CWebUser->__get('ui')
+#2 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(126): require('/home/jaime/Pub...')
+#3 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/jaime/Pub...', NULL, true)
+#4 /home/jaime/appstecnocastro/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/jaime/Pub...', NULL, true)
+#5 /home/jaime/appstecnocastro/yii/framework/web/CController.php(782): CController->renderPartial('vCasosUso', NULL, true)
+#6 /home/jaime/Public/AdmGuardia/protected/controllers/SiteController.php(114): CController->render('vCasosUso')
+#7 /home/jaime/appstecnocastro/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionVCasosUso()
+#8 /home/jaime/appstecnocastro/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /home/jaime/appstecnocastro/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /home/jaime/appstecnocastro/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('vCasosUso')
+#12 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/vCasosUso')
+#13 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=site/vCasosUso
+HTTP_REFERER=http://localhost/~jaime/AdmGuardia/index.php
+---
+2014/10/19 12:08:06 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.ui" is not defined.' in /home/jaime/appstecnocastro/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/auth/CWebUser.php(146): CComponent->__get('ui')
+#1 /home/jaime/Public/AdmGuardia/protected/views/site/vCasosUso.php(13): CWebUser->__get('ui')
+#2 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(126): require('/home/jaime/Pub...')
+#3 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/jaime/Pub...', NULL, true)
+#4 /home/jaime/appstecnocastro/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/jaime/Pub...', NULL, true)
+#5 /home/jaime/appstecnocastro/yii/framework/web/CController.php(782): CController->renderPartial('vCasosUso', NULL, true)
+#6 /home/jaime/Public/AdmGuardia/protected/controllers/SiteController.php(114): CController->render('vCasosUso')
+#7 /home/jaime/appstecnocastro/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionVCasosUso()
+#8 /home/jaime/appstecnocastro/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /home/jaime/appstecnocastro/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /home/jaime/appstecnocastro/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('vCasosUso')
+#12 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/vCasosUso')
+#13 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=site/vCasosUso
+HTTP_REFERER=http://localhost/~jaime/AdmGuardia/index.php
+---
+2014/10/19 13:44:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "yii".' in /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('yii')
+#1 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=yii
+---
