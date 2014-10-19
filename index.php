@@ -12,8 +12,4 @@ defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL',3);
 require_once($yii);
 Yii::createWebApplication($config)->run();
 
-//hice otro cambio yo cris1 jainm2
-//hice un cambio jaime
-//mi segundo cambio jaime
-//mi tercer cambio jaime
 
