@@ -44,7 +44,7 @@ class TipoActividad extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'actividads' => array(self::HAS_MANY, 'Actividad', 'TipoActividad_id'),
+			'actividad' => array(self::HAS_MANY, 'Actividad', 'TipoActividad_id'),
 		);
 	}
 

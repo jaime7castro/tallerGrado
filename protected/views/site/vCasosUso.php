@@ -10,10 +10,16 @@ echo "<h1>CASOS DE USO</h1>";
 <ul>
     <li><h3>UNIDAD</h3>
         <ol>
-            <li><?php echo CHtml::link("Gestionar tipo de actividad",$this->createUrl("/site/vTipoActividad"))?></li>
+            <li><?php echo CHtml::link("Gestionar tipo de actividad",$this->createUrl("/tipoActividad/index"))?></li>
+            
         </ol>
     </li>
-    <li><h3>PERSONAS</h3></li>
+    <li><h3>PERSONAS</h3>
+        <ul>
+            <li><?php echo CHtml::link("Gestionar Persona",$this->createUrl("/persona/index"))?></li>
+            
+        </ul>
+    </li>
     <li><h3>SERVICIO DE GUARDIA</h3></li>
     <li><h3>REPORTES</h3></li>
 </ul> 

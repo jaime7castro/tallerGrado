@@ -113,7 +113,7 @@ class SiteController extends Controller
         public function actionVCasosUso(){
             $this->render('vCasosUso');
         }
-        public function actionVTipoActividad(){
-            $this->render('vTipoActividad');
+        public function actionTipoActividad(){
+            $this->render('../tipoActividad/index');
         }
 }

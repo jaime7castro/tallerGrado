@@ -1,15 +1,15 @@
 <?php
-/* @var $this TipoActividadController */
-/* @var $model TipoActividad */
+/* @var $this PersonaController */
+/* @var $model Persona */
 
 $this->breadcrumbs=array(
-	'Tipo Actividads'=>array('index'),
+	'Personas'=>array('index'),
 	'Manage',
 );
 
 $this->menu=array(
-	array('label'=>'List TipoActividad', 'url'=>array('index')),
-	array('label'=>'Create TipoActividad', 'url'=>array('create')),
+	array('label'=>'List Persona', 'url'=>array('index')),
+	array('label'=>'Create Persona', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -18,7 +18,7 @@ $('.search-button').click(function(){
 	return false;
 });
 $('.search-form form').submit(function(){
-	$('#tipo-actividad-grid').yiiGridView('update', {
+	$('#persona-grid').yiiGridView('update', {
 		data: $(this).serialize()
 	});
 	return false;
@@ -26,14 +26,11 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Gestionar Tipo Actividad</h1>
+<h1>Manage Personas</h1>
 
 <p>
-También puede escribir un operador de comparaci&oacute;n 
-(<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>)
-al principio de cada uno de los valores de b&uacute;squeda para especificar 
-c&oacute;mo se debe hacer la comparaci&oacute;n . 
+You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
+or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
 </p>
 
 <?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
@@ -44,12 +41,26 @@ c&oacute;mo se debe hacer la comparaci&oacute;n .
 </div><!-- search-form -->
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'tipo-actividad-grid',
+	'id'=>'persona-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
-		'id',
-		'descripcion',
+		'codigo',
+		'nroCi',
+		'nombres',
+		'apPat',
+		'apMat',
+		'sexo',
+		/*
+		'fechaNac',
+		'edad',
+		'tipoSangre',
+		'direccion',
+		'grado',
+		'especialidad',
+		'cargoUnidad',
+		'Clase_id',
+		*/
 		array(
 			'class'=>'CButtonColumn',
 		),

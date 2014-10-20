@@ -304,3 +304,14 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/~jaime/AdmGuardia/index.php?r=yii
 ---
+2014/10/19 17:55:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "vTipoActividad".' in /home/jaime/appstecnocastro/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CController.php(270): CController->missingAction('vTipoActividad')
+#1 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('vTipoActividad')
+#2 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/vTipoActiv...')
+#3 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=site/vTipoActividad
+HTTP_REFERER=http://localhost/~jaime/AdmGuardia/index.php?r=site/vCasosUso
+---

@@ -1,18 +1,18 @@
 <?php
-/* @var $this TipoActividadController */
+/* @var $this PersonaController */
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Tipo Actividad',
+	'Personas',
 );
 
 $this->menu=array(
-	array('label'=>'Create TipoActividad', 'url'=>array('create')),
-	array('label'=>'Manage TipoActividad', 'url'=>array('admin')),
+	array('label'=>'Create Persona', 'url'=>array('create')),
+	array('label'=>'Manage Persona', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Tipo Actividad</h1>
+<h1>Personas</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
