@@ -99,7 +99,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'Clase_id'); ?>
-		<?php echo $form->textField($model,'Clase_id'); ?>
+		<?php echo $form->dropDownList($model,'Clase_id',CHtml::listData(Clase::model()->findAll(),'id','descripcion')); ?>
 		<?php echo $form->error($model,'Clase_id'); ?>
 	</div>
 

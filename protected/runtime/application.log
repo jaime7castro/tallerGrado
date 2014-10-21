@@ -315,3 +315,19 @@ Stack trace:
 REQUEST_URI=/~jaime/AdmGuardia/index.php?r=site/vTipoActividad
 HTTP_REFERER=http://localhost/~jaime/AdmGuardia/index.php?r=site/vCasosUso
 ---
+2014/10/21 10:48:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('login')
+#1 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=login
+---
+2014/10/21 11:09:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "yii".' in /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('yii')
+#1 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=yii
+---

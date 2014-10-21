@@ -18,6 +18,17 @@
  * @property string $especialidad
  * @property string $cargoUnidad
  * @property integer $Clase_id
+ *
+ * The followings are the available model relations:
+ * @property Aviso[] $avisos
+ * @property CuentaUsuario[] $cuentaUsuarios
+ * @property DetalleContactoP[] $detalleContactoPs
+ * @property DetalleGrupoGuardia[] $detalleGrupoGuardias
+ * @property DetallePrivilegioPer[] $detallePrivilegioPers
+ * @property Estado[] $estados
+ * @property HorarioGuardia[] $horarioGuardias
+ * @property Clase $clase
+ * @property RolGuardia[] $rolGuardias
  */
 class Persona extends CActiveRecord
 {
@@ -37,7 +48,7 @@ class Persona extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('codigo, nroCi, nombres, apPat', 'required'),
+			array('codigo, nroCi, nombres, apPat, sexo, fechaNac, edad, tipoSangre, Clase_id', 'required'),
 			array('edad, Clase_id', 'numerical', 'integerOnly'=>true),
 			array('codigo, nroCi, nombres, apPat, apMat', 'length', 'max'=>45),
 			array('sexo, fechaNac, tipoSangre, grado, especialidad', 'length', 'max'=>10),
@@ -57,6 +68,15 @@ class Persona extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'avisos' => array(self::HAS_MANY, 'Aviso', 'Persona_codigo'),
+			'cuentaUsuarios' => array(self::HAS_MANY, 'CuentaUsuario', 'Persona_codigo'),
+			'detalleContactoPs' => array(self::HAS_MANY, 'DetalleContactoP', 'Persona_codigo'),
+			'detalleGrupoGuardias' => array(self::HAS_MANY, 'DetalleGrupoGuardia', 'Persona_codigo'),
+			'detallePrivilegioPers' => array(self::HAS_MANY, 'DetallePrivilegioPer', 'Persona_codigo'),
+			'estados' => array(self::MANY_MANY, 'Estado', 'Estado_Persona(Persona_codigo, Estado_id)'),
+			'horarioGuardias' => array(self::HAS_MANY, 'HorarioGuardia', 'Persona_codigo'),
+			'clase' => array(self::BELONGS_TO, 'Clase', 'Clase_id'),
+			'rolGuardias' => array(self::HAS_MANY, 'RolGuardia', 'Persona_codigo'),
 		);
 	}
 
