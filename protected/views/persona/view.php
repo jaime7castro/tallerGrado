@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Persona', 'url'=>array('index')),
-	array('label'=>'Create Persona', 'url'=>array('create')),
-	array('label'=>'Update Persona', 'url'=>array('update', 'id'=>$model->codigo)),
-	array('label'=>'Delete Persona', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->codigo),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Persona', 'url'=>array('admin')),
+	array('label'=>'Listar Persona', 'url'=>array('index')),
+	array('label'=>'Crear Persona', 'url'=>array('create')),
+	array('label'=>'Editar Persona', 'url'=>array('update', 'id'=>$model->codigo)),
+	array('label'=>'Eliminar Persona', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->codigo),'confirm'=>'Está seguro de eliminar esta persona?')),
+	array('label'=>'Administrar Persona', 'url'=>array('admin')),
 );
 ?>
 

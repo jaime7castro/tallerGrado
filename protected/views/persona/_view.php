@@ -32,6 +32,12 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('fechaNac')); ?>:</b>
 	<?php echo CHtml::encode($data->fechaNac); ?>
 	<br />
+        
+        
+        
+        <b><?php echo CHtml::encode($data->getAttributeLabel('Clase_id')); ?>:</b>
+	<?php echo CHtml::encode($data->clase->descripcion); ?>
+	<br />
 
 	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('edad')); ?>:</b>
@@ -57,10 +63,8 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('cargoUnidad')); ?>:</b>
 	<?php echo CHtml::encode($data->cargoUnidad); ?>
 	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('Clase_id')); ?>:</b>
-	<?php echo CHtml::encode($data->Clase_id); ?>
-	<br />
+        
+	
 
 	*/ ?>
 
