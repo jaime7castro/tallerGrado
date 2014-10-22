@@ -12,7 +12,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>Gestionar Estado</h1>
+<h1>Gestionar Estado del Personal</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

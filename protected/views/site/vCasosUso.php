@@ -21,11 +21,16 @@ echo "<h1>CASOS DE USO</h1>";
     <li><h3>PERSONAS</h3>
         <ul>
             <li><?php echo CHtml::link("Gestionar Persona",$this->createUrl("/persona/index"))?></li>
-            <li><?php echo CHtml::link("Gestionar Estado",$this->createUrl("/estado/index"))?></li>
+            <li><?php echo CHtml::link("Gestionar Estado del Personal",$this->createUrl("/estado/index"))?></li>
             
         </ul>
         <br>
     </li>
     <li><h3>SERVICIO DE GUARDIA</h3></li>
+        <ul>
+            <li><?php echo CHtml::link("Gestionar Puesto de Guardia",$this->createUrl("/puestoGuardia/index"))?></li>
+            
+        </ul>
+        <br>
     <li><h3>REPORTES</h3></li>
 </ul> 
