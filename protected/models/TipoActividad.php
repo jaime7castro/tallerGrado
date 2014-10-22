@@ -55,7 +55,7 @@ class TipoActividad extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'descripcion' => 'Descripcion',
+			'descripcion' => 'Tipo de Actividad',
 		);
 	}
 

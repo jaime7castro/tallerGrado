@@ -4,15 +4,15 @@
 
 $this->breadcrumbs=array(
 	'Tipo Actividad'=>array('index'),
-	'Create',
+	'Nuevo',
 );
 
 $this->menu=array(
-	array('label'=>'List TipoActividad', 'url'=>array('index')),
-	array('label'=>'Manage TipoActividad', 'url'=>array('admin')),
+	array('label'=>'Listar Tipo de Actividad', 'url'=>array('index')),
+	array('label'=>'Administrar Tipo de Actividad', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create TipoActividad</h1>
+<h1>Nuevo Tipo de Actividad</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

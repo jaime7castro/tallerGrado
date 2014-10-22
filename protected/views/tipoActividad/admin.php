@@ -3,13 +3,13 @@
 /* @var $model TipoActividad */
 
 $this->breadcrumbs=array(
-	'Tipo Actividads'=>array('index'),
-	'Manage',
+	'Tipo Actividad'=>array('index'),
+	'Administrar',
 );
 
 $this->menu=array(
-	array('label'=>'List TipoActividad', 'url'=>array('index')),
-	array('label'=>'Create TipoActividad', 'url'=>array('create')),
+	array('label'=>'Listar TipoActividad', 'url'=>array('index')),
+	array('label'=>'Nuevo TipoActividad', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -26,7 +26,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Gestionar Tipo Actividad</h1>
+<h1>Tipo de Actividad</h1>
 
 <p>
 También puede escribir un operador de comparaci&oacute;n 
@@ -36,7 +36,7 @@ al principio de cada uno de los valores de b&uacute;squeda para especificar
 c&oacute;mo se debe hacer la comparaci&oacute;n . 
 </p>
 
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
+<?php echo CHtml::link('Busqueda Avanzada','#',array('class'=>'search-button')); ?>
 <div class="search-form" style="display:none">
 <?php $this->renderPartial('_search',array(
 	'model'=>$model,
