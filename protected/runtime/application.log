@@ -581,3 +581,183 @@ Stack trace:
 REQUEST_URI=/~jaime/AdmGuardia/index.php?r=persona/create
 HTTP_REFERER=http://localhost/~jaime/AdmGuardia/index.php?r=persona/index
 ---
+2014/10/21 22:09:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "controlador/admin"' in /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php
+---
+2014/10/21 22:09:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "controlador/admin"' in /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php
+---
+2014/10/21 23:44:06 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in /home/jaime/appstecnocastro/yii/framework/web/CController.php:336
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/jaime/appstecnocastro/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /home/jaime/appstecnocastro/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/jaime/appstecnocastro/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/jaime/appstecnocastro/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#9 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('persona/view')
+#10 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=persona/view&Codigo=cod-001
+HTTP_REFERER=http://localhost/~jaime/AdmGuardia/index.php?r=persona/index
+---
+2014/10/21 23:44:15 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in /home/jaime/appstecnocastro/yii/framework/web/CController.php:336
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/jaime/appstecnocastro/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /home/jaime/appstecnocastro/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/jaime/appstecnocastro/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/jaime/appstecnocastro/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#9 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('persona/view')
+#10 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=persona/view&Codigo=cod-02
+HTTP_REFERER=http://localhost/~jaime/AdmGuardia/index.php?r=persona/index
+---
+2014/10/21 23:46:05 [error] [exception.CException] exception 'CException' with message 'El atributo debe especificarse en el formato "Nombre:Tipo:Etiqueta", donde "Tipo" y "Etiqueta" son opcionales.' in /home/jaime/appstecnocastro/yii/framework/zii/widgets/CDetailView.php:183
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(173): CDetailView->run()
+#1 /home/jaime/Public/AdmGuardia/protected/views/persona/view.php(39): CBaseController->widget('zii.widgets.CDe...', Array)
+#2 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(126): require('/home/jaime/Pub...')
+#3 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/jaime/Pub...', Array, true)
+#4 /home/jaime/appstecnocastro/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/jaime/Pub...', Array, true)
+#5 /home/jaime/appstecnocastro/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#6 /home/jaime/Public/AdmGuardia/protected/controllers/PersonaController.php(56): CController->render('view', Array)
+#7 [internal function]: PersonaController->actionView('cod-04')
+#8 /home/jaime/appstecnocastro/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(PersonaController), Array)
+#9 /home/jaime/appstecnocastro/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(PersonaController), Object(ReflectionMethod), Array)
+#10 /home/jaime/appstecnocastro/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /home/jaime/appstecnocastro/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /home/jaime/appstecnocastro/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /home/jaime/appstecnocastro/yii/framework/web/CController.php(291): CFilterChain->run()
+#17 /home/jaime/appstecnocastro/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#19 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('persona/view')
+#20 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=persona/view&id=cod-04
+HTTP_REFERER=http://localhost/~jaime/AdmGuardia/index.php?r=persona/create
+---
+2014/10/21 23:49:43 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in /home/jaime/appstecnocastro/yii/framework/web/CController.php:336
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/jaime/appstecnocastro/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /home/jaime/appstecnocastro/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/jaime/appstecnocastro/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/jaime/appstecnocastro/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#9 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('persona/view')
+#10 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=persona/view&Codigo=cod-001
+HTTP_REFERER=http://localhost/~jaime/AdmGuardia/index.php?r=persona/index
+---
+2014/10/21 23:56:49 [error] [exception.CException] exception 'CException' with message 'El atributo debe especificarse en el formato "Nombre:Tipo:Etiqueta", donde "Tipo" y "Etiqueta" son opcionales.' in /home/jaime/appstecnocastro/yii/framework/zii/widgets/CDetailView.php:183
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(173): CDetailView->run()
+#1 /home/jaime/Public/AdmGuardia/protected/views/persona/view.php(39): CBaseController->widget('zii.widgets.CDe...', Array)
+#2 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(126): require('/home/jaime/Pub...')
+#3 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/jaime/Pub...', Array, true)
+#4 /home/jaime/appstecnocastro/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/jaime/Pub...', Array, true)
+#5 /home/jaime/appstecnocastro/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#6 /home/jaime/Public/AdmGuardia/protected/controllers/PersonaController.php(56): CController->render('view', Array)
+#7 [internal function]: PersonaController->actionView('cod-001')
+#8 /home/jaime/appstecnocastro/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(PersonaController), Array)
+#9 /home/jaime/appstecnocastro/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(PersonaController), Object(ReflectionMethod), Array)
+#10 /home/jaime/appstecnocastro/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /home/jaime/appstecnocastro/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /home/jaime/appstecnocastro/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /home/jaime/appstecnocastro/yii/framework/web/CController.php(291): CFilterChain->run()
+#17 /home/jaime/appstecnocastro/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#19 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('persona/view')
+#20 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=persona/view&id=cod-001
+HTTP_REFERER=http://localhost/~jaime/AdmGuardia/index.php?r=persona/index
+---
+2014/10/22 00:01:11 [error] [exception.CException] exception 'CException' with message 'La columna debe especificarse en el formato "Nombre:Tipo:Etiqueta", donde "Tipo" y "Etiqueta" son opcionales.' in /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CGridView.php:412
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CGridView.php(383): CGridView->createDataColumn('Nro de CI')
+#1 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CGridView.php(359): CGridView->initColumns()
+#2 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(147): CGridView->init()
+#3 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#4 /home/jaime/Public/AdmGuardia/protected/views/persona/admin.php(71): CBaseController->widget('zii.widgets.gri...', Array)
+#5 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(126): require('/home/jaime/Pub...')
+#6 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/jaime/Pub...', Array, true)
+#7 /home/jaime/appstecnocastro/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/jaime/Pub...', Array, true)
+#8 /home/jaime/appstecnocastro/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#9 /home/jaime/Public/AdmGuardia/protected/controllers/PersonaController.php(143): CController->render('admin', Array)
+#10 /home/jaime/appstecnocastro/yii/framework/web/actions/CInlineAction.php(49): PersonaController->actionAdmin()
+#11 /home/jaime/appstecnocastro/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /home/jaime/appstecnocastro/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 /home/jaime/appstecnocastro/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 /home/jaime/appstecnocastro/yii/framework/web/CController.php(291): CFilterChain->run()
+#18 /home/jaime/appstecnocastro/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#20 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('persona/admin')
+#21 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#22 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=persona/admin
+HTTP_REFERER=http://localhost/~jaime/AdmGuardia/index.php?r=persona/index
+---
+2014/10/22 00:17:19 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'cod-04' for key 'PRIMARY'. La sentencia SQL ejecutada fue: INSERT INTO `Persona` (`codigo`, `nroCi`, `nombres`, `apPat`, `apMat`, `sexo`, `fechaNac`, `edad`, `tipoSangre`, `direccion`, `grado`, `especialidad`, `cargoUnidad`, `Clase_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13).
+in /home/jaime/Public/AdmGuardia/protected/controllers/PersonaController.php (73)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/22 00:17:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'cod-04' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `Persona` (`codigo`, `nroCi`, `nombres`, `apPat`, `apMat`, `sexo`, `fechaNac`, `edad`, `tipoSangre`, `direccion`, `grado`, `especialidad`, `cargoUnidad`, `Clase_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13)' in /home/jaime/appstecnocastro/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/db/ar/CActiveRecord.php(1077): CDbCommand->execute()
+#1 /home/jaime/appstecnocastro/yii/framework/db/ar/CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 /home/jaime/Public/AdmGuardia/protected/controllers/PersonaController.php(73): CActiveRecord->save()
+#3 /home/jaime/appstecnocastro/yii/framework/web/actions/CInlineAction.php(49): PersonaController->actionCreate()
+#4 /home/jaime/appstecnocastro/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /home/jaime/appstecnocastro/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /home/jaime/appstecnocastro/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/jaime/appstecnocastro/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /home/jaime/appstecnocastro/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('persona/create')
+#14 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=persona/create
+HTTP_REFERER=http://localhost/~jaime/AdmGuardia/index.php?r=persona/create
+---

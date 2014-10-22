@@ -1,4 +1,7 @@
 <?php
 return array(
-	'Name'=>'Nombre'
+	'Name'=>'Nombre',
+        'Save'=>'Guardar',
+        'Create'=>'Crear',
+    
 );

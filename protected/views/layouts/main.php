@@ -16,6 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+        <link rel="shortcut icon" href="<?php echo Yii::app()->request->baseUrl; ?>/images/icon.png" type="image/x-icon" />
 </head>
 
 <body>
@@ -50,9 +51,9 @@
 	<div class="clear"></div>
 
 	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
-		All Rights Reserved.<br/>
-		<?php echo Yii::powered(); ?>
+		Copyright &copy; <?php echo date('Y'); ?> por Jaime Castro y Cristhian Blanco.<br/>
+		Todos los derechos reservados.<br/>
+		
 	</div><!-- footer -->
 
 </div><!-- page -->

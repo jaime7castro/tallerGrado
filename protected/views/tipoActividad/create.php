@@ -3,7 +3,7 @@
 /* @var $model TipoActividad */
 
 $this->breadcrumbs=array(
-	'Tipo Actividads'=>array('index'),
+	'Tipo Actividad'=>array('index'),
 	'Create',
 );
 

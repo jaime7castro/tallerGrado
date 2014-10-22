@@ -3,16 +3,16 @@
 /* @var $model Persona */
 
 $this->breadcrumbs=array(
-	'Personas'=>array('index'),
-	'Create',
+	'Persona'=>array('index'),
+	'Nueva',
 );
 
 $this->menu=array(
-	array('label'=>'List Persona', 'url'=>array('index')),
-	array('label'=>'Manage Persona', 'url'=>array('admin')),
+	array('label'=>'Listar Persona', 'url'=>array('index')),
+	array('label'=>'Administar Persona', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Persona</h1>
+<h1>Nueva Persona</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

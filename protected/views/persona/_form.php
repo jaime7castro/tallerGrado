@@ -15,48 +15,48 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note">Los campos con (<span class="required">*</span>) son requeridos.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Código'); ?>
+		<?php echo $form->labelEx($model,'codigo'); ?>
 		<?php echo $form->textField($model,'codigo',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'codigo'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Nro de CI'); ?>
+		<?php echo $form->labelEx($model,'nroCi'); ?>
 		<?php echo $form->textField($model,'nroCi',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'nroCi'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Nombres'); ?>
+		<?php echo $form->labelEx($model,'nombres'); ?>
 		<?php echo $form->textField($model,'nombres',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'nombres'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Apellido paterno'); ?>
+		<?php echo $form->labelEx($model,'apPat'); ?>
 		<?php echo $form->textField($model,'apPat',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'apPat'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Apellido Materno'); ?>
+		<?php echo $form->labelEx($model,'apMat'); ?>
 		<?php echo $form->textField($model,'apMat',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'apMat'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Sexo'); ?>
+		<?php echo $form->labelEx($model,'sexo'); ?>
 		<?php echo $form->dropDownList($model,'sexo',array('H'=>'Hombre','M'=>'Mujer')); ?>
 		<?php echo $form->error($model,'sexo'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Fecha de Nacimiento'); ?>
+		<?php echo $form->labelEx($model,'fechaNac'); ?>
 		<?php #echo $form->textField($model,'fechaNac',array('size'=>10,'maxlength'=>10)); 
                 $this->widget('zii.widgets.jui.CJuiDatePicker',
                     array(
@@ -77,26 +77,26 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Edad'); ?>
+		<?php echo $form->labelEx($model,'edad'); ?>
 		<?php echo $form->textField($model,'edad'); ?>
 		<?php echo $form->error($model,'edad'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Grupo Sanguineo'); ?>
+		<?php echo $form->labelEx($model,'tipoSangre'); ?>
 		<?php echo $form->dropDownList($model,'tipoSangre',array('O(+)'=>'O(+)','A(+)'=>'A(+)',
                     'B(+)'=>'B(+)','AB(+)'=>'AB(+)','O(-)'=>'O(-)','A(-)'=>'A(-)','B(-)'=>'B(-)','AB(-)'=>'AB(-)')); ?>
 		<?php echo $form->error($model,'tipoSangre'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Dirección'); ?>
+		<?php echo $form->labelEx($model,'direccion'); ?>
 		<?php echo $form->textField($model,'direccion',array('size'=>60,'maxlength'=>300)); ?>
 		<?php echo $form->error($model,'direccion'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Grado militar'); ?>
+		<?php echo $form->labelEx($model,'grado'); ?>
 		<?php echo $form->dropDownList($model,'grado',array(''=>'Ninguno','Marino'=>'Marinero','M2'=>'Marinero de Segunada',
                     'M1'=>'Marinero de Primera','SI.'=>'Sargento Inicial','S2.'=>'Sargento Segundo',
                     'S1'=>'Sargento Primero','SM'=>'Sargento Mayor','SOI'=>'Suboficial Inicial',
@@ -108,27 +108,27 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Especialidad'); ?>
+		<?php echo $form->labelEx($model,'especialidad'); ?>
 		<?php echo $form->dropDownList($model,'especialidad',array('Ninguno'=>'Ninguno','DESN'=>'DESN','CEGIM'=>'CEGIM',
                     'CGON'=>'CGON','DEM'=>'DEM','DAEN'=>'DAEN')); ?>
 		<?php echo $form->error($model,'especialidad'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Cargo que desempeña en la Unidad'); ?>
+		<?php echo $form->labelEx($model,'cargoUnidad'); ?>
 		<?php echo $form->dropDownList($model,'cargoUnidad',array('Ninguno'=>'Ninguno','Dir.'=>'Director','Cmd.'=>'Comandamte','SCmd.'=>'Sub Comandamte','J.Ope.'=>'Jefe de Operaciones',
                     'J.Log.'=>'Jefe de Logistica','J.Per.'=>'Jefe de Personal','Cmd.Cia.'=>'Comandamte de Compañia')); ?>
 		<?php echo $form->error($model,'cargoUnidad'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Clase'); ?>
+		<?php echo $form->labelEx($model,'Clase_id'); ?>
 		<?php echo $form->dropDownList($model,'Clase_id',CHtml::listData(Clase::model()->findAll(),'id','descripcion')); ?>
 		<?php echo $form->error($model,'Clase_id'); ?>
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar' : 'Editar'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

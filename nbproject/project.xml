@@ -5,5 +5,13 @@
         <data xmlns="http://www.netbeans.org/ns/php-project/1">
             <name>AdmGuardia</name>
         </data>
+        <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+            <word>Administrar</word>
+            <word>Editar</word>
+            <word>Nueva</word>
+            <word>requeridos</word>
+            <word>Ver</word>
+            <word>Visualizar</word>
+        </spellchecker-wordlist>
     </configuration>
 </project>

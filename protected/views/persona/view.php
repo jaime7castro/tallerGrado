@@ -3,7 +3,7 @@
 /* @var $model Persona */
 
 $this->breadcrumbs=array(
-	'Personas'=>array('index'),
+	'Persona'=>array('index'),
 	$model->codigo,
 );
 
@@ -16,7 +16,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>View Persona #<?php echo $model->codigo; ?></h1>
+<h1>Ver Persona #<?php echo $model->codigo; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

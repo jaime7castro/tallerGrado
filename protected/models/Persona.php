@@ -86,19 +86,19 @@ class Persona extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'codigo' => 'Codigo',
-			'nroCi' => 'Nro Ci',
+			'codigo' => 'Código',
+			'nroCi' => 'Nro de CI',
 			'nombres' => 'Nombres',
-			'apPat' => 'Ap Pat',
-			'apMat' => 'Ap Mat',
+			'apPat' => 'Apellido Paterno',
+			'apMat' => 'Apellido Materno',
 			'sexo' => 'Sexo',
-			'fechaNac' => 'Fecha Nac',
+			'fechaNac' => 'Fecha de Nacimiento',
 			'edad' => 'Edad',
-			'tipoSangre' => 'Tipo Sangre',
-			'direccion' => 'Direccion',
+			'tipoSangre' => 'Grupo Sanguineo',
+			'direccion' => 'Dirección',
 			'grado' => 'Grado',
 			'especialidad' => 'Especialidad',
-			'cargoUnidad' => 'Cargo Unidad',
+			'cargoUnidad' => 'Cargo en la Unidad',
 			'Clase_id' => 'Clase',
 		);
 	}

@@ -5,7 +5,8 @@
 
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
-return array(
+return array(    
+    
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Área Naval No. 2',
 
@@ -17,6 +18,9 @@ return array(
 		'application.models.*',
 		'application.components.*',
 	),
+        'sourceLanguage'=>'en',
+        'language'=>'es',
+        //'defaultController'=>'controlador/admin',
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
