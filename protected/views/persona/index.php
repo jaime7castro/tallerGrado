@@ -2,6 +2,7 @@
 /* @var $this PersonaController */
 /* @var $dataProvider CActiveDataProvider */
 
+
 $this->breadcrumbs=array(
 	'Persona',
 );
@@ -18,3 +19,4 @@ $this->menu=array(
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',
 )); ?>
+

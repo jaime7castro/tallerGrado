@@ -34,10 +34,13 @@
 	<br />
         
         
-        
         <b><?php echo CHtml::encode($data->getAttributeLabel('Clase_id')); ?>:</b>
 	<?php echo CHtml::encode($data->clase->descripcion); ?>
 	<br />
+        
+        <hr>
+  
+        <?php echo CHtml::link(CHtml::encode('ingresar a CONTACTOS'), array('viewDCP', 'id'=>$data->codigo)); ?>
 
 	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('edad')); ?>:</b>

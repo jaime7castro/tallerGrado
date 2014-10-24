@@ -7,9 +7,10 @@ $this->breadcrumbs=array(
 	$model->codigo,
 );
 
+
 $this->menu=array(
 	array('label'=>'Listar Persona', 'url'=>array('index')),
-	array('label'=>'Crear Persona', 'url'=>array('create')),
+	array('label'=>'Nuevo Persona', 'url'=>array('create')),
 	array('label'=>'Editar Persona', 'url'=>array('update', 'id'=>$model->codigo)),
 	array('label'=>'Eliminar Persona', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->codigo),'confirm'=>'Está seguro de eliminar esta persona?')),
 	array('label'=>'Administrar Persona', 'url'=>array('admin')),
@@ -36,4 +37,7 @@ $this->menu=array(
 		'cargoUnidad',
 		'Clase_id',
 	),
-)); ?>
+)); 
+?>
+<?php echo CHtml::link(CHtml::encode('ingresar a CONTACTOS'), array('viewDCP', 'id'=>$model->codigo)); ?>
+
