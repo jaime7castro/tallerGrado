@@ -23,7 +23,7 @@ $this->menu=array(
         <div class="row">
 		<?php echo $form->labelEx($modelDCP,'tipoContacto'); ?>
 		<?php echo $form->dropDownList($modelDCP,'tipoContacto',array('Telefono'=>'Telefono','Celular'=>'Celular',
-                'Correo electronico'=>'Correo electronico')); ?>
+                'Correo electronico'=>'Correo electronico','Fax'=>'Fax')); ?>
 		<?php echo $form->error($modelDCP,'tipoContacto'); ?>
 	</div>
 

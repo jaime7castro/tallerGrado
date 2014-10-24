@@ -6,9 +6,6 @@ $this->breadcrumbs=array(
 	'Unidad',
 );
 
-$this->menu=array(
-	#array('label'=>'Editar Unidad', 'url'=>array('update')),
-);
 
 ?>
 

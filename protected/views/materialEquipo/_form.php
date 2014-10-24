@@ -19,7 +19,7 @@
 
 	<?php echo $form->errorSummary($model); ?>
         
-        <div class="row">
+        <div class="row" hidden="true">
 		<?php echo $form->labelEx($model,'Unidad_codigo'); ?>
 		<?php echo $form->dropDownList($model,'Unidad_codigo',CHtml::listData(Unidad::model()->findAll(),'codigo','descripcion')); ?>
 		<?php echo $form->error($model,'Unidad_codigo'); ?>

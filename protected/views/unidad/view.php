@@ -27,3 +27,4 @@ $this->menu=array(
 		'direccion',
 	),
 )); ?>
+<?php echo CHtml::link(CHtml::encode('ingresar a CONTACTOS'), array('viewDCU', 'id'=>$model->codigo)); ?>

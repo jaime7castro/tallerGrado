@@ -28,15 +28,15 @@ class UnidadController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','viewDCU'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('create','update','createDCU','updateDCU'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
+				'actions'=>array('admin','delete','deleteDCU'),
 				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -170,4 +170,37 @@ class UnidadController extends Controller
 			Yii::app()->end();
 		}
 	}
+        
+        public function actionViewDCU($id){
+            $modelDCU=  DetalleContactoU::model();         
+            $detalleContactoU=$modelDCU->findAllByAttributes(array('Unidad_codigo'=>$id));
+            $this->render('viewDCU',array('detalleContactoU'=>$detalleContactoU,'id'=>$id));
+        }
+        
+        public function actionUpdateDCU($id){
+            $modelDCU=  DetalleContactoU::model()->findByPk($id);
+            if(isset($_POST['DetalleContactoU']))
+            {
+                $modelDCU->attributes=$_POST['DetalleContactoU'];
+                if($modelDCU->save())
+                    $this->redirect(array('viewDCU','id'=>$modelDCU->Unidad_codigo));
+            }       
+            $this->render('updateDCU',array('modelDCU'=>$modelDCU));
+        }
+        
+        public function actionCreateDCU($id){
+            $modelDCU=  new DetalleContactoU();
+            if(isset($_POST['DetalleContactoU'])){
+                $modelDCU->attributes=$_POST['DetalleContactoU'];
+                if($modelDCU->save())
+                    $this->redirect(array('viewDCU','id'=>$modelDCU->Unidad_codigo));
+            }       
+            $this->render('createDCU',array('modelDCU'=>$modelDCU,'id'=>$id));
+        }
+        
+        public function actionDeleteDCU($id){
+            $modelDCU=  DetalleContactoU::model()->findByPk($id);
+            $modelDCU->delete();
+            $this->redirect(array('viewDCU','id'=>$modelDCU->Unidad_codigo));
+        }
 }
