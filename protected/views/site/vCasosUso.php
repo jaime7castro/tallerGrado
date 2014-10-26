@@ -23,6 +23,7 @@ echo "<h1>CASOS DE USO</h1>";
         <ul>
             <li><?php echo CHtml::link("Gestionar Persona",$this->createUrl("/persona/index"))?></li>
             <li><?php echo CHtml::link("Gestionar Estado del Personal",$this->createUrl("/estado/index"))?></li>
+            <li><?php echo CHtml::link("Administrar Estado del Personal",$this->createUrl("/estadoPersona/admin"))?></li>
             
         </ul>
         <br>
