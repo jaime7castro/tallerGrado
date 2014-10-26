@@ -1,6 +1,6 @@
 <?php
 
-class EstadoPersonaController extends Controller
+class DetalleGrupoGuardiaController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -62,14 +62,14 @@ class EstadoPersonaController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new EstadoPersona;
+		$model=new DetalleGrupoGuardia;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['EstadoPersona']))
+		if(isset($_POST['DetalleGrupoGuardia']))
 		{
-			$model->attributes=$_POST['EstadoPersona'];
+			$model->attributes=$_POST['DetalleGrupoGuardia'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -91,9 +91,9 @@ class EstadoPersonaController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['EstadoPersona']))
+		if(isset($_POST['DetalleGrupoGuardia']))
 		{
-			$model->attributes=$_POST['EstadoPersona'];
+			$model->attributes=$_POST['DetalleGrupoGuardia'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -122,7 +122,7 @@ class EstadoPersonaController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('EstadoPersona');
+		$dataProvider=new CActiveDataProvider('DetalleGrupoGuardia');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -133,10 +133,10 @@ class EstadoPersonaController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new EstadoPersona('search');
+		$model=new DetalleGrupoGuardia('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['EstadoPersona']))
-			$model->attributes=$_GET['EstadoPersona'];
+		if(isset($_GET['DetalleGrupoGuardia']))
+			$model->attributes=$_GET['DetalleGrupoGuardia'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -147,12 +147,12 @@ class EstadoPersonaController extends Controller
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return EstadoPersona the loaded model
+	 * @return DetalleGrupoGuardia the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=EstadoPersona::model()->findByPk($id);
+		$model=DetalleGrupoGuardia::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -160,24 +160,24 @@ class EstadoPersonaController extends Controller
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param EstadoPersona $model the model to be validated
+	 * @param DetalleGrupoGuardia $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='estado-persona-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='detalle-grupo-guardia-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
 	}
         
-	public function actionAjaxEditColumn(){
+        public function actionAjaxEditColumn(){
 		$keyvalue	= $_POST["keyvalue"];  	// ie: 'userid123'
 		$name		= $_POST["name"];	// ie: 'firstname'
 		$old_value  = $_POST["old_value"];	// ie: 'patricia'
 		$new_value  = $_POST["new_value"];	// ie: '  paTTy '
 
-		$model = EstadoPersona::model()->findByPk($keyvalue);
+		$model = DetalleGrupoGuardia::model()->findByPk($keyvalue);
 		if($model){
 			$model[$name] = $new_value;
 			if($model->validate()){
@@ -191,5 +191,4 @@ class EstadoPersonaController extends Controller
 		
 		echo $new_value;			// Patty
 	}
-        
 }

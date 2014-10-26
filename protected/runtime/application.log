@@ -5170,3 +5170,105 @@ Stack trace:
 REQUEST_URI=/~jaime/AdmGuardia/index.php?r=estadoPersona/index
 HTTP_REFERER=http://localhost/~jaime/AdmGuardia/index.php?r=estadoPersona/admin
 ---
+2014/10/26 17:54:06 [warning] [application] Error al establecer unsafe al atributo "Nombre" de "DetalleGrupoGuardia".
+in /home/jaime/Public/AdmGuardia/protected/controllers/DetalleGrupoGuardiaController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/26 17:54:06 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "DetalleGrupoGuardia".
+in /home/jaime/Public/AdmGuardia/protected/controllers/DetalleGrupoGuardiaController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/26 17:54:06 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "DetalleGrupoGuardia".
+in /home/jaime/Public/AdmGuardia/protected/controllers/DetalleGrupoGuardiaController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/26 17:54:09 [warning] [application] Error al establecer unsafe al atributo "Nombre" de "DetalleGrupoGuardia".
+in /home/jaime/Public/AdmGuardia/protected/controllers/DetalleGrupoGuardiaController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/26 17:54:09 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "DetalleGrupoGuardia".
+in /home/jaime/Public/AdmGuardia/protected/controllers/DetalleGrupoGuardiaController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/26 17:54:09 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "DetalleGrupoGuardia".
+in /home/jaime/Public/AdmGuardia/protected/controllers/DetalleGrupoGuardiaController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/26 17:54:13 [warning] [application] Error al establecer unsafe al atributo "Nombre" de "DetalleGrupoGuardia".
+in /home/jaime/Public/AdmGuardia/protected/controllers/DetalleGrupoGuardiaController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/26 17:54:13 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "DetalleGrupoGuardia".
+in /home/jaime/Public/AdmGuardia/protected/controllers/DetalleGrupoGuardiaController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/26 17:54:13 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "DetalleGrupoGuardia".
+in /home/jaime/Public/AdmGuardia/protected/controllers/DetalleGrupoGuardiaController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/26 17:54:16 [warning] [application] Error al establecer unsafe al atributo "Nombre" de "DetalleGrupoGuardia".
+in /home/jaime/Public/AdmGuardia/protected/controllers/DetalleGrupoGuardiaController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/26 17:54:16 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "DetalleGrupoGuardia".
+in /home/jaime/Public/AdmGuardia/protected/controllers/DetalleGrupoGuardiaController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/26 17:54:16 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "DetalleGrupoGuardia".
+in /home/jaime/Public/AdmGuardia/protected/controllers/DetalleGrupoGuardiaController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/26 17:55:51 [warning] [application] Error al establecer unsafe al atributo "Nombre" de "DetalleGrupoGuardia".
+in /home/jaime/Public/AdmGuardia/protected/controllers/DetalleGrupoGuardiaController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/26 17:55:51 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "DetalleGrupoGuardia".
+in /home/jaime/Public/AdmGuardia/protected/controllers/DetalleGrupoGuardiaController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/26 17:55:51 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "DetalleGrupoGuardia".
+in /home/jaime/Public/AdmGuardia/protected/controllers/DetalleGrupoGuardiaController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/26 17:55:56 [warning] [application] Error al establecer unsafe al atributo "Nombre" de "DetalleGrupoGuardia".
+in /home/jaime/Public/AdmGuardia/protected/controllers/DetalleGrupoGuardiaController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/26 17:55:56 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "DetalleGrupoGuardia".
+in /home/jaime/Public/AdmGuardia/protected/controllers/DetalleGrupoGuardiaController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/26 17:55:56 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "DetalleGrupoGuardia".
+in /home/jaime/Public/AdmGuardia/protected/controllers/DetalleGrupoGuardiaController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/26 17:55:59 [warning] [application] Error al establecer unsafe al atributo "Nombre" de "DetalleGrupoGuardia".
+in /home/jaime/Public/AdmGuardia/protected/controllers/DetalleGrupoGuardiaController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/26 17:55:59 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "DetalleGrupoGuardia".
+in /home/jaime/Public/AdmGuardia/protected/controllers/DetalleGrupoGuardiaController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/26 17:55:59 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "DetalleGrupoGuardia".
+in /home/jaime/Public/AdmGuardia/protected/controllers/DetalleGrupoGuardiaController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/26 17:59:07 [error] [exception.CException] exception 'CException' with message 'DetalleGrupoGuardiaController no ha podido encontrar la vista "index" solicitada.' in /home/jaime/appstecnocastro/yii/framework/web/CController.php:878
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#1 /home/jaime/Public/AdmGuardia/protected/controllers/DetalleGrupoGuardiaController.php(128): CController->render('index', Array)
+#2 /home/jaime/appstecnocastro/yii/framework/web/actions/CInlineAction.php(49): DetalleGrupoGuardiaController->actionIndex()
+#3 /home/jaime/appstecnocastro/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /home/jaime/appstecnocastro/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /home/jaime/appstecnocastro/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/jaime/appstecnocastro/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /home/jaime/appstecnocastro/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('detalleGrupoGua...')
+#13 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=detalleGrupoGuardia/index
+HTTP_REFERER=http://localhost/~jaime/AdmGuardia/index.php?r=detalleGrupoGuardia/admin
+---
+2014/10/26 17:59:43 [warning] [application] Error al establecer unsafe al atributo "Nombre" de "DetalleGrupoGuardia".
+in /home/jaime/Public/AdmGuardia/protected/controllers/DetalleGrupoGuardiaController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/26 17:59:43 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "DetalleGrupoGuardia".
+in /home/jaime/Public/AdmGuardia/protected/controllers/DetalleGrupoGuardiaController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/26 17:59:43 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "DetalleGrupoGuardia".
+in /home/jaime/Public/AdmGuardia/protected/controllers/DetalleGrupoGuardiaController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/26 17:59:47 [warning] [application] Error al establecer unsafe al atributo "Nombre" de "DetalleGrupoGuardia".
+in /home/jaime/Public/AdmGuardia/protected/controllers/DetalleGrupoGuardiaController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/26 17:59:47 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "DetalleGrupoGuardia".
+in /home/jaime/Public/AdmGuardia/protected/controllers/DetalleGrupoGuardiaController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/26 17:59:47 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "DetalleGrupoGuardia".
+in /home/jaime/Public/AdmGuardia/protected/controllers/DetalleGrupoGuardiaController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)

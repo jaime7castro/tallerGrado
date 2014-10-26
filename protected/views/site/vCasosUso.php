@@ -32,6 +32,7 @@ echo "<h1>CASOS DE USO</h1>";
         <ul>
             <li><?php echo CHtml::link("Gestionar Puesto de Guardia",$this->createUrl("/puestoGuardia/index"))?></li>
             <li><?php echo CHtml::link("Gestionar Grupo de Guardia",$this->createUrl("/grupoGuardia/index"))?></li>
+            <li><?php echo CHtml::link("Asignar Grupo de Guardia",$this->createUrl("/detalleGrupoGuardia/admin"))?></li>
         </ul>
         <br>
     <li><h3>REPORTES</h3></li>
