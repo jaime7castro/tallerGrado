@@ -14,6 +14,7 @@ echo "<h1>CASOS DE USO</h1>";
             <li><?php echo CHtml::link("Registrar Unidad",$this->createUrl("/unidad/index"))?></li>
             <li><?php echo CHtml::link("Administrar material y equipos",$this->createUrl("/materialEquipo/index"))?></li>
             <li><?php echo CHtml::link("Gestionar tipo de actividad",$this->createUrl("/tipoActividad/index"))?></li>
+            <li><?php echo CHtml::link("Realizar Cronograma",$this->createUrl("/cronograma/index"))?></li>
             
         </ol>
         <br>

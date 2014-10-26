@@ -30,8 +30,9 @@ $this->menu=array(
 </div>
 
 
-
-<?php echo CHtml::submitButton('Editar');?>
+<div class="row buttons">
+    <?php echo CHtml::submitButton('Editar');?>
+</div>>
 
 <?php
     $this->endWidget();

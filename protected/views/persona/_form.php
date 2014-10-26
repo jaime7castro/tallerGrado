@@ -68,6 +68,7 @@
                             'constrainInput'=>'false',
                             'duration'=>'fast',
                             'showAnim'=>'slide',
+                            'constrainInput'=>'true',
                         ),
                     )
                 );
