@@ -1,6 +1,6 @@
 <?php
 $this->breadcrumbs=array(
-	'ServicioGuardia'=>array('index'),
+	'Servicio de Guardia'=>array('index'),
         $id,	
 );
 
@@ -10,7 +10,7 @@ $this->menu=array(
 ?>
 
 
-<h1>Ver Rol de Guardia</h1>
+<h1>Realizar Rol de Guardia</h1>
 
 
 <?php if($model) {?>

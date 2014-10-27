@@ -19,7 +19,13 @@
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('GrupoGuardia_id')); ?>:</b>
 	<?php echo CHtml::encode($data->GrupoGuardia_id); ?>
-	<br />
-        
+	<br/>
+        <hr>
         <?php echo CHtml::link(CHtml::encode('ingresar al ROL DE GUARDIA'), array('viewRG', 'id'=>$data->id)); ?>
+        <br>
+        <?php if($data->rolGuardias) {
+            echo CHtml::link(CHtml::encode('ingresar al HORARIO DE GUARDIA'), array('viewHG', 'id'=>$data->id));            
+        }else{ 
+            echo '<h5> Registre el ROL DE GUARDIA con el Grupo de Guardia antes de Realizar el HORARIO DE GUARDIA<h5>';     
+        }?>
 </div>

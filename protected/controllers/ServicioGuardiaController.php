@@ -28,15 +28,15 @@ class ServicioGuardiaController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view','viewRG'),
+				'actions'=>array('index','view','viewRG','viewHG'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','createRG','updateRG'),
+				'actions'=>array('create','update','createRG','updateRG','createHG','updateHG'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete','deleteRG'),
+				'actions'=>array('admin','delete','deleteRG','deleteHG'),
 				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -203,5 +203,39 @@ class ServicioGuardiaController extends Controller
             $model= RolGuardia::model()->findByPk($id);
             $model->delete();
             $this->redirect(array('viewRG','id'=>$model->ServicioGuardia_id));
+        }
+        
+        /////////////////Controlador para el HORARIO DE GUARDIA//////////////////
+        public function actionViewHG($id){
+            $modelHG= HorarioGuardia::model();         
+            $model=$modelHG->findAllByAttributes(array('ServicioGuardia_id'=>$id));
+            $this->render('viewHG',array('model'=>$model,'id'=>$id));
+        }
+        
+        public function actionUpdateHG($id){
+            $model= HorarioGuardia::model()->findByPk($id);
+            if(isset($_POST['HorarioGuardia']))
+            {
+                $model->attributes=$_POST['HorarioGuardia'];
+                if($model->save())
+                    $this->redirect(array('viewHG','id'=>$model->ServicioGuardia_id));
+            }       
+            $this->render('updateHG',array('model'=>$model));
+        }
+        
+        public function actionCreateHG($id){
+            $model=  new HorarioGuardia();
+            if(isset($_POST['HorarioGuardia'])){
+                $model->attributes=$_POST['HorarioGuardia'];
+                if($model->save())
+                    $this->redirect(array('viewHG','id'=>$model->ServicioGuardia_id));
+            }       
+            $this->render('createHG',array('model'=>$model,'id'=>$id));
+        }
+        
+        public function actionDeleteHG($id){
+            $model= HorarioGuardia::model()->findByPk($id);
+            $model->delete();
+            $this->redirect(array('viewHG','id'=>$model->ServicioGuardia_id));
         }
 }
