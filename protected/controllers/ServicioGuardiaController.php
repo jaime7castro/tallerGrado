@@ -1,6 +1,6 @@
 <?php
 
-class CronogramaController extends Controller
+class ServicioGuardiaController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -28,15 +28,15 @@ class CronogramaController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view','viewACT'),
+				'actions'=>array('index','view','viewRG'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','createACT','updateACT'),
+				'actions'=>array('create','update','createRG','updateRG'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete','deleteACT'),
+				'actions'=>array('admin','delete','deleteRG'),
 				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -62,14 +62,14 @@ class CronogramaController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Cronograma;
+		$model=new ServicioGuardia;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Cronograma']))
+		if(isset($_POST['ServicioGuardia']))
 		{
-			$model->attributes=$_POST['Cronograma'];
+			$model->attributes=$_POST['ServicioGuardia'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -91,9 +91,9 @@ class CronogramaController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Cronograma']))
+		if(isset($_POST['ServicioGuardia']))
 		{
-			$model->attributes=$_POST['Cronograma'];
+			$model->attributes=$_POST['ServicioGuardia'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -122,7 +122,7 @@ class CronogramaController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Cronograma');
+		$dataProvider=new CActiveDataProvider('ServicioGuardia');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -133,10 +133,10 @@ class CronogramaController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Cronograma('search');
+		$model=new ServicioGuardia('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Cronograma']))
-			$model->attributes=$_GET['Cronograma'];
+		if(isset($_GET['ServicioGuardia']))
+			$model->attributes=$_GET['ServicioGuardia'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -147,12 +147,12 @@ class CronogramaController extends Controller
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return Cronograma the loaded model
+	 * @return ServicioGuardia the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=Cronograma::model()->findByPk($id);
+		$model=ServicioGuardia::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -160,49 +160,48 @@ class CronogramaController extends Controller
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param Cronograma $model the model to be validated
+	 * @param ServicioGuardia $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='cronograma-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='servicio-guardia-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
 	}
         
-        ///////////Controlador para las ACTIVIDADES/////////////////////////////
-        
-        public function actionViewACT($id){
-            $modelACT= Actividad::model();         
-            $actividad=$modelACT->findAllByAttributes(array('Cronograma_id'=>$id));
-            $this->render('viewACT',array('actividad'=>$actividad,'id'=>$id));
+        /////////////////Controlador para el ROL DE GUARDI//////////////////
+        public function actionViewRG($id){
+            $modelRG= RolGuardia::model();         
+            $model=$modelRG->findAllByAttributes(array('ServicioGuardia_id'=>$id));
+            $this->render('viewRG',array('model'=>$model,'id'=>$id));
         }
         
-        public function actionUpdateACT($id){
-            $model= Actividad::model()->findByPk($id);
-            if(isset($_POST['Actividad']))
+        public function actionUpdateRG($id){
+            $model= RolGuardia::model()->findByPk($id);
+            if(isset($_POST['RolGuardia']))
             {
-                $model->attributes=$_POST['Actividad'];
+                $model->attributes=$_POST['RolGuardia'];
                 if($model->save())
-                    $this->redirect(array('viewACT','id'=>$model->Cronograma_id));
+                    $this->redirect(array('viewRG','id'=>$model->ServicioGuardia_id));
             }       
-            $this->render('updateACT',array('model'=>$model));
+            $this->render('updateRG',array('model'=>$model));
         }
         
-        public function actionCreateACT($id){
-            $model=  new Actividad();
-            if(isset($_POST['Actividad'])){
-                $model->attributes=$_POST['Actividad'];
+        public function actionCreateRG($id){
+            $model=  new RolGuardia();
+            if(isset($_POST['RolGuardia'])){
+                $model->attributes=$_POST['RolGuardia'];
                 if($model->save())
-                    $this->redirect(array('viewACT','id'=>$model->Cronograma_id));
+                    $this->redirect(array('viewRG','id'=>$model->ServicioGuardia_id));
             }       
-            $this->render('createACT',array('model'=>$model,'id'=>$id));
+            $this->render('createRG',array('model'=>$model,'id'=>$id));
         }
         
-        public function actionDeleteACT($id){
-            $modelACT= Actividad::model()->findByPk($id);
-            $modelACT->delete();
-            $this->redirect(array('viewACT','id'=>$modelACT->Cronograma_id));
+        public function actionDeleteRG($id){
+            $model= RolGuardia::model()->findByPk($id);
+            $model->delete();
+            $this->redirect(array('viewRG','id'=>$model->ServicioGuardia_id));
         }
 }

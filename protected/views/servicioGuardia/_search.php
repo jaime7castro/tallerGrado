@@ -1,6 +1,6 @@
 <?php
-/* @var $this CronogramaController */
-/* @var $model Cronograma */
+/* @var $this ServicioGuardiaController */
+/* @var $model ServicioGuardia */
 /* @var $form CActiveForm */
 ?>
 
@@ -27,8 +27,8 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'Unidad_codigo'); ?>
-		<?php echo $form->textField($model,'Unidad_codigo',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->label($model,'GrupoGuardia_id'); ?>
+		<?php echo $form->textField($model,'GrupoGuardia_id'); ?>
 	</div>
 
 	<div class="row buttons">

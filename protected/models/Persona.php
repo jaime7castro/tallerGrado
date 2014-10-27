@@ -151,4 +151,14 @@ class Persona extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+        
+        public static function getNombreCompleto()
+        {
+            return CHtml::listData(Persona::model()->findAll(),'codigo','nombre');
+        }
+        
+        public function getFullName() {
+            $fullName = $this->apPat." ".$this->apMat." ".$this->nombres;
+        return $fullName;
+}
 }
