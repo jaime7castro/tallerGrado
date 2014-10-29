@@ -49,9 +49,14 @@ c&oacute;mo se debe hacer la comparaci&oacute;n .
 	'filter'=>$model,
 	'columns'=>array(
 		'id',
-		'dia',
+		array(
+                    'name'=>'dia',
+                    'value'=>'$data->dia',
+                        'filter'=> array('Lunes'=>'Lunes','Martes'=>'Martes','Miercoles'=>'Miercoles',
+                            'Jueves'=>'Jueves','Viernes'=>'Viernes','Sabado'=>'Sabado','Domingo'=>'Domingo'), 
+		),
 		'fecha',
-		'Unidad_codigo',
+		//'Unidad_codigo',
 		array(
 			'class'=>'CButtonColumn',
 		),

@@ -5650,3 +5650,1013 @@ Stack trace:
 REQUEST_URI=/~jaime/AdmGuardia/index.php?r=aviso/updateAA&id=1
 HTTP_REFERER=http://localhost/~jaime/AdmGuardia/index.php?r=aviso/viewAA&id=1
 ---
+2014/10/29 10:34:21 [error] [exception.CException] exception 'CException' with message 'La propiedad "Unidad"."fecha_nacimiento" no se encuentra definida.' in /home/jaime/appstecnocastro/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('fecha_nacimient...')
+#1 /home/jaime/Public/AdmGuardia/protected/views/unidad/_form.php(45): CActiveRecord->__get('fecha_nacimient...')
+#2 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(126): require('/home/jaime/Pub...')
+#3 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/jaime/Pub...', Array, true)
+#4 /home/jaime/appstecnocastro/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/jaime/Pub...', Array, true)
+#5 /home/jaime/Public/AdmGuardia/protected/views/unidad/update.php(21): CController->renderPartial('_form', Array)
+#6 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(126): require('/home/jaime/Pub...')
+#7 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/jaime/Pub...', Array, true)
+#8 /home/jaime/appstecnocastro/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/jaime/Pub...', Array, true)
+#9 /home/jaime/appstecnocastro/yii/framework/web/CController.php(782): CController->renderPartial('update', Array, true)
+#10 /home/jaime/Public/AdmGuardia/protected/controllers/UnidadController.php(103): CController->render('update', Array)
+#11 [internal function]: UnidadController->actionUpdate('U-123')
+#12 /home/jaime/appstecnocastro/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(UnidadController), Array)
+#13 /home/jaime/appstecnocastro/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UnidadController), Object(ReflectionMethod), Array)
+#14 /home/jaime/appstecnocastro/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /home/jaime/appstecnocastro/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /home/jaime/appstecnocastro/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /home/jaime/appstecnocastro/yii/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/jaime/appstecnocastro/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('update')
+#23 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('unidad/update')
+#24 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#25 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=unidad/update&id=U-123
+HTTP_REFERER=https://localhost/~jaime/AdmGuardia/index.php?r=unidad/view&id=U-123
+---
+2014/10/29 11:45:22 [error] [php] Undefined variable: data (/home/jaime/Public/AdmGuardia/protected/views/aviso/admin.php:59)
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CController.php(869): AvisoController->renderFile()
+#1 /home/jaime/appstecnocastro/yii/framework/web/CController.php(782): AvisoController->renderPartial()
+#2 /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php(143): AvisoController->render()
+#3 /home/jaime/appstecnocastro/yii/framework/web/actions/CInlineAction.php(49): AvisoController->actionAdmin()
+#4 /home/jaime/appstecnocastro/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(133): AvisoController->runAction()
+#6 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /home/jaime/appstecnocastro/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /home/jaime/appstecnocastro/yii/framework/web/filters/CInlineFilter.php(58): AvisoController->filterAccessControl()
+#9 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /home/jaime/appstecnocastro/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /home/jaime/appstecnocastro/yii/framework/web/CController.php(265): AvisoController->runActionWithFilters()
+#12 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): AvisoController->run()
+#13 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /home/jaime/Public/AdmGuardia/index.php(13): CWebApplication->run()
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=aviso/admin
+in /home/jaime/Public/AdmGuardia/protected/views/aviso/admin.php (59)
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (143)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:45:59 [error] [exception.CException] exception 'CException' with message 'La propiedad "Aviso"."Apellido_Paterno" no se encuentra definida.' in /home/jaime/appstecnocastro/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('Apellido_Patern...')
+#1 /home/jaime/appstecnocastro/yii/framework/web/helpers/CHtml.php(2529): CActiveRecord->__get('Apellido_Patern...')
+#2 /home/jaime/appstecnocastro/yii/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(Aviso), 'Apellido_Patern...')
+#3 /home/jaime/appstecnocastro/yii/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(Aviso), 'Apellido_Patern...', Array)
+#4 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CDataColumn.php(103): CHtml::activeTextField(Object(Aviso), 'Apellido_Patern...', Array)
+#5 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CGridColumn.php(116): CDataColumn->renderFilterCellContent()
+#6 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CGridView.php(532): CGridColumn->renderFilterCell()
+#7 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CGridView.php(510): CGridView->renderFilter()
+#8 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CGridView.php(480): CGridView->renderTableHeader()
+#9 /home/jaime/appstecnocastro/yii/framework/zii/widgets/CBaseListView.php(167): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 /home/jaime/appstecnocastro/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#12 /home/jaime/appstecnocastro/yii/framework/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#13 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#14 /home/jaime/Public/AdmGuardia/protected/views/aviso/admin.php(80): CBaseController->widget('zii.widgets.gri...', Array)
+#15 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(126): require('/home/jaime/Pub...')
+#16 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/jaime/Pub...', Array, true)
+#17 /home/jaime/appstecnocastro/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/jaime/Pub...', Array, true)
+#18 /home/jaime/appstecnocastro/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#19 /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php(143): CController->render('admin', Array)
+#20 /home/jaime/appstecnocastro/yii/framework/web/actions/CInlineAction.php(49): AvisoController->actionAdmin()
+#21 /home/jaime/appstecnocastro/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#22 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#23 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#24 /home/jaime/appstecnocastro/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#25 /home/jaime/appstecnocastro/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#26 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#27 /home/jaime/appstecnocastro/yii/framework/web/CController.php(291): CFilterChain->run()
+#28 /home/jaime/appstecnocastro/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#30 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('aviso/admin')
+#31 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#32 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=aviso/admin
+HTTP_REFERER=https://localhost/~jaime/AdmGuardia/index.php?r=aviso/create
+---
+2014/10/29 11:47:10 [error] [exception.CException] exception 'CException' with message 'La propiedad "Aviso"."codigoPersona" no se encuentra definida.' in /home/jaime/appstecnocastro/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('codigoPersona')
+#1 /home/jaime/appstecnocastro/yii/framework/base/CComponent.php(612) : eval()'d code(1): CActiveRecord->__get('codigoPersona')
+#2 /home/jaime/appstecnocastro/yii/framework/base/CComponent.php(612): eval()
+#3 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CDataColumn.php(137): CComponent->evaluateExpression('$data->codigoPe...', Array)
+#4 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CGridColumn.php(151): CDataColumn->renderDataCellContent(0, Object(Aviso))
+#5 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CGridView.php(616): CGridColumn->renderDataCell(0)
+#6 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CGridView.php(572): CGridView->renderTableRow(0)
+#7 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CGridView.php(482): CGridView->renderTableBody()
+#8 /home/jaime/appstecnocastro/yii/framework/zii/widgets/CBaseListView.php(167): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 /home/jaime/appstecnocastro/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#11 /home/jaime/appstecnocastro/yii/framework/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#12 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#13 /home/jaime/Public/AdmGuardia/protected/views/aviso/admin.php(80): CBaseController->widget('zii.widgets.gri...', Array)
+#14 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(126): require('/home/jaime/Pub...')
+#15 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/jaime/Pub...', Array, true)
+#16 /home/jaime/appstecnocastro/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/jaime/Pub...', Array, true)
+#17 /home/jaime/appstecnocastro/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#18 /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php(143): CController->render('admin', Array)
+#19 /home/jaime/appstecnocastro/yii/framework/web/actions/CInlineAction.php(49): AvisoController->actionAdmin()
+#20 /home/jaime/appstecnocastro/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#21 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#23 /home/jaime/appstecnocastro/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#24 /home/jaime/appstecnocastro/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#26 /home/jaime/appstecnocastro/yii/framework/web/CController.php(291): CFilterChain->run()
+#27 /home/jaime/appstecnocastro/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#29 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('aviso/admin')
+#30 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#31 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=aviso/admin
+HTTP_REFERER=https://localhost/~jaime/AdmGuardia/index.php?r=aviso/create
+---
+2014/10/29 11:47:58 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:47:58 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:47:58 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:48:01 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:48:01 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:48:01 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:48:05 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:48:05 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:48:05 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:48:08 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:48:08 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:48:08 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:48:47 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:48:47 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:48:47 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:48:50 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:48:50 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:48:50 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:48:53 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:48:53 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:48:53 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:48:56 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:48:56 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:48:56 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:49:00 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:49:00 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:49:00 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:49:05 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:49:05 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:49:05 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:49:09 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:49:09 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:49:09 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:49:19 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:49:19 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:49:19 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:49:26 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:49:26 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 11:49:26 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:03:02 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:03:02 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:03:02 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:03:05 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:03:05 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:03:05 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:03:09 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:03:09 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:03:09 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:04:02 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:04:02 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:04:02 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:04:06 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:04:06 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:04:06 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:07:32 [warning] [application] Error al establecer unsafe al atributo "id" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:07:32 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:07:32 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:07:32 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:07:35 [warning] [application] Error al establecer unsafe al atributo "id" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:07:35 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:07:35 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:07:35 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:08:27 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:08:27 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:08:34 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:08:34 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:08:37 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:08:37 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:08:40 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:08:40 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:08:43 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:08:43 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:08:46 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:08:46 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:09:48 [error] [php] Trying to get property of non-object (/home/jaime/Public/AdmGuardia/protected/models/Aviso.php:106)
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(95): AvisoController->renderInternal()
+#1 /home/jaime/appstecnocastro/yii/framework/web/CController.php(869): AvisoController->renderFile()
+#2 /home/jaime/appstecnocastro/yii/framework/web/CController.php(782): AvisoController->renderPartial()
+#3 /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php(143): AvisoController->render()
+#4 /home/jaime/appstecnocastro/yii/framework/web/actions/CInlineAction.php(49): AvisoController->actionAdmin()
+#5 /home/jaime/appstecnocastro/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(133): AvisoController->runAction()
+#7 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /home/jaime/appstecnocastro/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#9 /home/jaime/appstecnocastro/yii/framework/web/filters/CInlineFilter.php(58): AvisoController->filterAccessControl()
+#10 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /home/jaime/appstecnocastro/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /home/jaime/appstecnocastro/yii/framework/web/CController.php(265): AvisoController->runActionWithFilters()
+#13 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): AvisoController->run()
+#14 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /home/jaime/Public/AdmGuardia/index.php(13): CWebApplication->run()
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=aviso/admin
+in /home/jaime/Public/AdmGuardia/protected/models/Aviso.php (106)
+in /home/jaime/Public/AdmGuardia/protected/views/aviso/admin.php (48)
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (143)
+2014/10/29 13:10:22 [error] [php] Trying to get property of non-object (/home/jaime/Public/AdmGuardia/protected/models/Aviso.php:106)
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(95): AvisoController->renderInternal()
+#1 /home/jaime/appstecnocastro/yii/framework/web/CController.php(869): AvisoController->renderFile()
+#2 /home/jaime/appstecnocastro/yii/framework/web/CController.php(782): AvisoController->renderPartial()
+#3 /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php(143): AvisoController->render()
+#4 /home/jaime/appstecnocastro/yii/framework/web/actions/CInlineAction.php(49): AvisoController->actionAdmin()
+#5 /home/jaime/appstecnocastro/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(133): AvisoController->runAction()
+#7 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /home/jaime/appstecnocastro/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#9 /home/jaime/appstecnocastro/yii/framework/web/filters/CInlineFilter.php(58): AvisoController->filterAccessControl()
+#10 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /home/jaime/appstecnocastro/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /home/jaime/appstecnocastro/yii/framework/web/CController.php(265): AvisoController->runActionWithFilters()
+#13 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): AvisoController->run()
+#14 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /home/jaime/Public/AdmGuardia/index.php(13): CWebApplication->run()
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=aviso/admin
+in /home/jaime/Public/AdmGuardia/protected/models/Aviso.php (106)
+in /home/jaime/Public/AdmGuardia/protected/views/aviso/admin.php (48)
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (143)
+2014/10/29 13:10:24 [error] [php] Trying to get property of non-object (/home/jaime/Public/AdmGuardia/protected/models/Aviso.php:106)
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(95): AvisoController->renderInternal()
+#1 /home/jaime/appstecnocastro/yii/framework/web/CController.php(869): AvisoController->renderFile()
+#2 /home/jaime/appstecnocastro/yii/framework/web/CController.php(782): AvisoController->renderPartial()
+#3 /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php(143): AvisoController->render()
+#4 /home/jaime/appstecnocastro/yii/framework/web/actions/CInlineAction.php(49): AvisoController->actionAdmin()
+#5 /home/jaime/appstecnocastro/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(133): AvisoController->runAction()
+#7 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /home/jaime/appstecnocastro/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#9 /home/jaime/appstecnocastro/yii/framework/web/filters/CInlineFilter.php(58): AvisoController->filterAccessControl()
+#10 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /home/jaime/appstecnocastro/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /home/jaime/appstecnocastro/yii/framework/web/CController.php(265): AvisoController->runActionWithFilters()
+#13 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): AvisoController->run()
+#14 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /home/jaime/Public/AdmGuardia/index.php(13): CWebApplication->run()
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=aviso/admin
+in /home/jaime/Public/AdmGuardia/protected/models/Aviso.php (106)
+in /home/jaime/Public/AdmGuardia/protected/views/aviso/admin.php (48)
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (143)
+2014/10/29 13:11:13 [error] [php] Undefined variable: data (/home/jaime/Public/AdmGuardia/protected/models/Aviso.php:106)
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(95): AvisoController->renderInternal()
+#1 /home/jaime/appstecnocastro/yii/framework/web/CController.php(869): AvisoController->renderFile()
+#2 /home/jaime/appstecnocastro/yii/framework/web/CController.php(782): AvisoController->renderPartial()
+#3 /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php(143): AvisoController->render()
+#4 /home/jaime/appstecnocastro/yii/framework/web/actions/CInlineAction.php(49): AvisoController->actionAdmin()
+#5 /home/jaime/appstecnocastro/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(133): AvisoController->runAction()
+#7 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /home/jaime/appstecnocastro/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#9 /home/jaime/appstecnocastro/yii/framework/web/filters/CInlineFilter.php(58): AvisoController->filterAccessControl()
+#10 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /home/jaime/appstecnocastro/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /home/jaime/appstecnocastro/yii/framework/web/CController.php(265): AvisoController->runActionWithFilters()
+#13 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): AvisoController->run()
+#14 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /home/jaime/Public/AdmGuardia/index.php(13): CWebApplication->run()
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=aviso/admin
+in /home/jaime/Public/AdmGuardia/protected/models/Aviso.php (106)
+in /home/jaime/Public/AdmGuardia/protected/views/aviso/admin.php (48)
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (143)
+2014/10/29 13:12:49 [error] [php] Trying to get property of non-object (/home/jaime/Public/AdmGuardia/protected/models/Aviso.php:106)
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(95): AvisoController->renderInternal()
+#1 /home/jaime/appstecnocastro/yii/framework/web/CController.php(869): AvisoController->renderFile()
+#2 /home/jaime/appstecnocastro/yii/framework/web/CController.php(782): AvisoController->renderPartial()
+#3 /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php(143): AvisoController->render()
+#4 /home/jaime/appstecnocastro/yii/framework/web/actions/CInlineAction.php(49): AvisoController->actionAdmin()
+#5 /home/jaime/appstecnocastro/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(133): AvisoController->runAction()
+#7 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /home/jaime/appstecnocastro/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#9 /home/jaime/appstecnocastro/yii/framework/web/filters/CInlineFilter.php(58): AvisoController->filterAccessControl()
+#10 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /home/jaime/appstecnocastro/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /home/jaime/appstecnocastro/yii/framework/web/CController.php(265): AvisoController->runActionWithFilters()
+#13 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): AvisoController->run()
+#14 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /home/jaime/Public/AdmGuardia/index.php(13): CWebApplication->run()
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=aviso/admin
+in /home/jaime/Public/AdmGuardia/protected/models/Aviso.php (106)
+in /home/jaime/Public/AdmGuardia/protected/views/aviso/admin.php (48)
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (143)
+2014/10/29 13:29:51 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:29:51 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:29:57 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:29:57 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:30:13 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:30:13 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:30:16 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:30:16 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:48:20 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:48:24 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:48:29 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:48:35 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:49:29 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:49:36 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:52:20 [error] [exception.CException] exception 'CException' with message 'La propiedad "Aviso"."Nombres" no se encuentra definida.' in /home/jaime/appstecnocastro/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('Nombres')
+#1 /home/jaime/appstecnocastro/yii/framework/web/helpers/CHtml.php(2529): CActiveRecord->__get('Nombres')
+#2 /home/jaime/appstecnocastro/yii/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(Aviso), 'Nombres')
+#3 /home/jaime/appstecnocastro/yii/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(Aviso), 'Nombres', Array)
+#4 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CDataColumn.php(103): CHtml::activeTextField(Object(Aviso), 'Nombres', Array)
+#5 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CGridColumn.php(116): CDataColumn->renderFilterCellContent()
+#6 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CGridView.php(532): CGridColumn->renderFilterCell()
+#7 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CGridView.php(510): CGridView->renderFilter()
+#8 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CGridView.php(480): CGridView->renderTableHeader()
+#9 /home/jaime/appstecnocastro/yii/framework/zii/widgets/CBaseListView.php(167): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 /home/jaime/appstecnocastro/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#12 /home/jaime/appstecnocastro/yii/framework/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#13 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#14 /home/jaime/Public/AdmGuardia/protected/views/aviso/admin.php(80): CBaseController->widget('zii.widgets.gri...', Array)
+#15 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(126): require('/home/jaime/Pub...')
+#16 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/jaime/Pub...', Array, true)
+#17 /home/jaime/appstecnocastro/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/jaime/Pub...', Array, true)
+#18 /home/jaime/appstecnocastro/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#19 /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php(143): CController->render('admin', Array)
+#20 /home/jaime/appstecnocastro/yii/framework/web/actions/CInlineAction.php(49): AvisoController->actionAdmin()
+#21 /home/jaime/appstecnocastro/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#22 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#23 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#24 /home/jaime/appstecnocastro/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#25 /home/jaime/appstecnocastro/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#26 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#27 /home/jaime/appstecnocastro/yii/framework/web/CController.php(291): CFilterChain->run()
+#28 /home/jaime/appstecnocastro/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#30 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('aviso/admin')
+#31 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#32 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=aviso/admin
+HTTP_REFERER=https://localhost/~jaime/AdmGuardia/index.php?r=aviso/index
+---
+2014/10/29 13:54:20 [error] [exception.CException] exception 'CException' with message 'La propiedad "Aviso"."Apellido_Materno" no se encuentra definida.' in /home/jaime/appstecnocastro/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('Apellido_Matern...')
+#1 /home/jaime/appstecnocastro/yii/framework/web/helpers/CHtml.php(2529): CActiveRecord->__get('Apellido_Matern...')
+#2 /home/jaime/appstecnocastro/yii/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(Aviso), 'Apellido_Matern...')
+#3 /home/jaime/appstecnocastro/yii/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(Aviso), 'Apellido_Matern...', Array)
+#4 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CDataColumn.php(103): CHtml::activeTextField(Object(Aviso), 'Apellido_Matern...', Array)
+#5 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CGridColumn.php(116): CDataColumn->renderFilterCellContent()
+#6 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CGridView.php(532): CGridColumn->renderFilterCell()
+#7 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CGridView.php(510): CGridView->renderFilter()
+#8 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CGridView.php(480): CGridView->renderTableHeader()
+#9 /home/jaime/appstecnocastro/yii/framework/zii/widgets/CBaseListView.php(167): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 /home/jaime/appstecnocastro/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#12 /home/jaime/appstecnocastro/yii/framework/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#13 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#14 /home/jaime/Public/AdmGuardia/protected/views/aviso/admin.php(80): CBaseController->widget('zii.widgets.gri...', Array)
+#15 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(126): require('/home/jaime/Pub...')
+#16 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/jaime/Pub...', Array, true)
+#17 /home/jaime/appstecnocastro/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/jaime/Pub...', Array, true)
+#18 /home/jaime/appstecnocastro/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#19 /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php(143): CController->render('admin', Array)
+#20 /home/jaime/appstecnocastro/yii/framework/web/actions/CInlineAction.php(49): AvisoController->actionAdmin()
+#21 /home/jaime/appstecnocastro/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#22 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#23 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#24 /home/jaime/appstecnocastro/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#25 /home/jaime/appstecnocastro/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#26 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#27 /home/jaime/appstecnocastro/yii/framework/web/CController.php(291): CFilterChain->run()
+#28 /home/jaime/appstecnocastro/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#30 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('aviso/admin')
+#31 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#32 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=aviso/admin
+HTTP_REFERER=https://localhost/~jaime/AdmGuardia/index.php?r=aviso/index
+---
+2014/10/29 13:55:02 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:55:02 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:55:02 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:55:06 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:55:06 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:55:06 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:55:09 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:55:09 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:55:09 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:55:12 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:55:12 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:55:12 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:58:05 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:58:05 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:58:08 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:58:08 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:58:15 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:58:15 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:58:18 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:58:18 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:58:23 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:58:23 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:59:38 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:59:38 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:59:42 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:59:42 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:59:47 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 13:59:47 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 14:00:55 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 14:00:55 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 14:01:02 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 14:01:02 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 14:01:39 [error] [exception.CException] exception 'CException' with message 'La propiedad "Aviso"."personaCodigo->nombres" no se encuentra definida.' in /home/jaime/appstecnocastro/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('personaCodigo->...')
+#1 /home/jaime/appstecnocastro/yii/framework/web/helpers/CHtml.php(2529): CActiveRecord->__get('personaCodigo->...')
+#2 /home/jaime/appstecnocastro/yii/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(Aviso), 'personaCodigo->...')
+#3 /home/jaime/appstecnocastro/yii/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(Aviso), 'personaCodigo->...', Array)
+#4 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CDataColumn.php(103): CHtml::activeTextField(Object(Aviso), 'personaCodigo->...', Array)
+#5 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CGridColumn.php(116): CDataColumn->renderFilterCellContent()
+#6 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CGridView.php(532): CGridColumn->renderFilterCell()
+#7 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CGridView.php(510): CGridView->renderFilter()
+#8 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CGridView.php(480): CGridView->renderTableHeader()
+#9 /home/jaime/appstecnocastro/yii/framework/zii/widgets/CBaseListView.php(167): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 /home/jaime/appstecnocastro/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#12 /home/jaime/appstecnocastro/yii/framework/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#13 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#14 /home/jaime/Public/AdmGuardia/protected/views/aviso/admin.php(80): CBaseController->widget('zii.widgets.gri...', Array)
+#15 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(126): require('/home/jaime/Pub...')
+#16 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/jaime/Pub...', Array, true)
+#17 /home/jaime/appstecnocastro/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/jaime/Pub...', Array, true)
+#18 /home/jaime/appstecnocastro/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#19 /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php(143): CController->render('admin', Array)
+#20 /home/jaime/appstecnocastro/yii/framework/web/actions/CInlineAction.php(49): AvisoController->actionAdmin()
+#21 /home/jaime/appstecnocastro/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#22 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#23 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#24 /home/jaime/appstecnocastro/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#25 /home/jaime/appstecnocastro/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#26 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#27 /home/jaime/appstecnocastro/yii/framework/web/CController.php(291): CFilterChain->run()
+#28 /home/jaime/appstecnocastro/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#30 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('aviso/admin')
+#31 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#32 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=aviso/admin
+HTTP_REFERER=https://localhost/~jaime/AdmGuardia/index.php?r=aviso/index
+---
+2014/10/29 14:02:02 [error] [exception.CException] exception 'CException' with message 'La propiedad "Aviso"."$data->personaCodigo->nombres" no se encuentra definida.' in /home/jaime/appstecnocastro/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('$data->personaC...')
+#1 /home/jaime/appstecnocastro/yii/framework/web/helpers/CHtml.php(2529): CActiveRecord->__get('$data->personaC...')
+#2 /home/jaime/appstecnocastro/yii/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(Aviso), '$data->personaC...')
+#3 /home/jaime/appstecnocastro/yii/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(Aviso), '$data->personaC...', Array)
+#4 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CDataColumn.php(103): CHtml::activeTextField(Object(Aviso), '$data->personaC...', Array)
+#5 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CGridColumn.php(116): CDataColumn->renderFilterCellContent()
+#6 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CGridView.php(532): CGridColumn->renderFilterCell()
+#7 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CGridView.php(510): CGridView->renderFilter()
+#8 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CGridView.php(480): CGridView->renderTableHeader()
+#9 /home/jaime/appstecnocastro/yii/framework/zii/widgets/CBaseListView.php(167): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 /home/jaime/appstecnocastro/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#12 /home/jaime/appstecnocastro/yii/framework/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#13 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#14 /home/jaime/Public/AdmGuardia/protected/views/aviso/admin.php(80): CBaseController->widget('zii.widgets.gri...', Array)
+#15 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(126): require('/home/jaime/Pub...')
+#16 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/jaime/Pub...', Array, true)
+#17 /home/jaime/appstecnocastro/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/jaime/Pub...', Array, true)
+#18 /home/jaime/appstecnocastro/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#19 /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php(143): CController->render('admin', Array)
+#20 /home/jaime/appstecnocastro/yii/framework/web/actions/CInlineAction.php(49): AvisoController->actionAdmin()
+#21 /home/jaime/appstecnocastro/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#22 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#23 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#24 /home/jaime/appstecnocastro/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#25 /home/jaime/appstecnocastro/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#26 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#27 /home/jaime/appstecnocastro/yii/framework/web/CController.php(291): CFilterChain->run()
+#28 /home/jaime/appstecnocastro/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#30 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('aviso/admin')
+#31 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#32 /home/jaime/Public/AdmGuardia/index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=aviso/admin
+HTTP_REFERER=https://localhost/~jaime/AdmGuardia/index.php?r=aviso/index
+---
+2014/10/29 14:03:14 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 14:03:14 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 14:03:20 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 14:03:20 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 14:03:24 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 14:03:24 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 14:03:28 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 14:03:28 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 14:55:26 [error] [php] Trying to get property of non-object (/home/jaime/Public/AdmGuardia/protected/models/Aviso.php:110)
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(95): AvisoController->renderInternal()
+#1 /home/jaime/appstecnocastro/yii/framework/web/CController.php(869): AvisoController->renderFile()
+#2 /home/jaime/appstecnocastro/yii/framework/web/CController.php(782): AvisoController->renderPartial()
+#3 /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php(143): AvisoController->render()
+#4 /home/jaime/appstecnocastro/yii/framework/web/actions/CInlineAction.php(49): AvisoController->actionAdmin()
+#5 /home/jaime/appstecnocastro/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(133): AvisoController->runAction()
+#7 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /home/jaime/appstecnocastro/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#9 /home/jaime/appstecnocastro/yii/framework/web/filters/CInlineFilter.php(58): AvisoController->filterAccessControl()
+#10 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /home/jaime/appstecnocastro/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /home/jaime/appstecnocastro/yii/framework/web/CController.php(265): AvisoController->runActionWithFilters()
+#13 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): AvisoController->run()
+#14 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /home/jaime/Public/AdmGuardia/index.php(13): CWebApplication->run()
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=aviso/admin
+in /home/jaime/Public/AdmGuardia/protected/models/Aviso.php (110)
+in /home/jaime/Public/AdmGuardia/protected/views/aviso/admin.php (48)
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (143)
+2014/10/29 14:56:21 [error] [php] Trying to get property of non-object (/home/jaime/Public/AdmGuardia/protected/models/Aviso.php:110)
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(95): AvisoController->renderInternal()
+#1 /home/jaime/appstecnocastro/yii/framework/web/CController.php(869): AvisoController->renderFile()
+#2 /home/jaime/appstecnocastro/yii/framework/web/CController.php(782): AvisoController->renderPartial()
+#3 /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php(143): AvisoController->render()
+#4 /home/jaime/appstecnocastro/yii/framework/web/actions/CInlineAction.php(49): AvisoController->actionAdmin()
+#5 /home/jaime/appstecnocastro/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(133): AvisoController->runAction()
+#7 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /home/jaime/appstecnocastro/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#9 /home/jaime/appstecnocastro/yii/framework/web/filters/CInlineFilter.php(58): AvisoController->filterAccessControl()
+#10 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /home/jaime/appstecnocastro/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /home/jaime/appstecnocastro/yii/framework/web/CController.php(265): AvisoController->runActionWithFilters()
+#13 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): AvisoController->run()
+#14 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /home/jaime/Public/AdmGuardia/index.php(13): CWebApplication->run()
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=aviso/admin
+in /home/jaime/Public/AdmGuardia/protected/models/Aviso.php (110)
+in /home/jaime/Public/AdmGuardia/protected/views/aviso/admin.php (48)
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (143)
+2014/10/29 15:45:38 [error] [php] Use of undefined constant Persona_codigo - assumed 'Persona_codigo' (/home/jaime/appstecnocastro/yii/framework/base/CComponent.php(612) : eval()'d code:1)
+Stack trace:
+#0 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CGridColumn.php(151): CDataColumn->renderDataCellContent()
+#1 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CGridView.php(616): CDataColumn->renderDataCell()
+#2 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CGridView.php(572): CGridView->renderTableRow()
+#3 /home/jaime/appstecnocastro/yii/framework/zii/widgets/grid/CGridView.php(482): CGridView->renderTableBody()
+#4 /home/jaime/appstecnocastro/yii/framework/zii/widgets/CBaseListView.php(167): CGridView->renderItems()
+#5 unknown(0): CGridView->renderSection()
+#6 /home/jaime/appstecnocastro/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback()
+#7 /home/jaime/appstecnocastro/yii/framework/zii/widgets/CBaseListView.php(135): CGridView->renderContent()
+#8 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(173): CGridView->run()
+#9 /home/jaime/Public/AdmGuardia/protected/views/aviso/admin.php(96): AvisoController->widget()
+#10 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(126): require()
+#11 /home/jaime/appstecnocastro/yii/framework/web/CBaseController.php(95): AvisoController->renderInternal()
+#12 /home/jaime/appstecnocastro/yii/framework/web/CController.php(869): AvisoController->renderFile()
+#13 /home/jaime/appstecnocastro/yii/framework/web/CController.php(782): AvisoController->renderPartial()
+#14 /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php(143): AvisoController->render()
+#15 /home/jaime/appstecnocastro/yii/framework/web/actions/CInlineAction.php(49): AvisoController->actionAdmin()
+#16 /home/jaime/appstecnocastro/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#17 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(133): AvisoController->runAction()
+#18 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /home/jaime/appstecnocastro/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#20 /home/jaime/appstecnocastro/yii/framework/web/filters/CInlineFilter.php(58): AvisoController->filterAccessControl()
+#21 /home/jaime/appstecnocastro/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#22 /home/jaime/appstecnocastro/yii/framework/web/CController.php(291): CFilterChain->run()
+#23 /home/jaime/appstecnocastro/yii/framework/web/CController.php(265): AvisoController->runActionWithFilters()
+#24 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(282): AvisoController->run()
+#25 /home/jaime/appstecnocastro/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#26 /home/jaime/appstecnocastro/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#27 /home/jaime/Public/AdmGuardia/index.php(13): CWebApplication->run()
+REQUEST_URI=/~jaime/AdmGuardia/index.php?r=aviso/admin
+in /home/jaime/Public/AdmGuardia/protected/views/aviso/admin.php (96)
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (143)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:50:55 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:50:55 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:50:55 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:50:58 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:50:58 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:50:58 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:51:00 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:51:00 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:51:00 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:51:06 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:51:06 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:51:06 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:51:15 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:51:15 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:51:15 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:51:21 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:51:21 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:51:21 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:51:24 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:51:24 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:51:24 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:51:28 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:51:28 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:51:28 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:51:31 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:51:31 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:51:31 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:51:35 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:51:35 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:51:35 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:53:02 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:53:02 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:53:02 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:53:05 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:53:05 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:53:05 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:53:10 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:53:10 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:53:10 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:53:13 [warning] [application] Error al establecer unsafe al atributo "Nombres" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:53:13 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:53:13 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:54:11 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:54:11 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:54:15 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 15:54:15 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 16:03:49 [warning] [application] Error al establecer unsafe al atributo "Apellido_Paterno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)
+2014/10/29 16:03:49 [warning] [application] Error al establecer unsafe al atributo "Apellido_Materno" de "Aviso".
+in /home/jaime/Public/AdmGuardia/protected/controllers/AvisoController.php (139)
+in /home/jaime/Public/AdmGuardia/index.php (13)

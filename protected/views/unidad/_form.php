@@ -19,11 +19,12 @@
 
 	<?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
+	<?php /*
+        <div class="row">
 		<?php echo $form->labelEx($model,'codigo'); ?>
 		<?php echo $form->textField($model,'codigo',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'codigo'); ?>
-	</div>
+	</div> */?>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'descripcion'); ?>
@@ -41,9 +42,15 @@
                         'language'=>'es',
                         'options'=>array(
                             'dateFormat'=>'dd/mm/yy',
-                            'constrainInput'=>'false',
+                            'constrainInput'=>true,
                             'duration'=>'fast',
                             'showAnim'=>'slide',
+                            'selectOtherMonths'=>true,
+                            'showButtonPanel'=>true,
+                            'showOtherMonths'=>true, 
+                            'changeMonth' => true, 
+                            'changeYear' => true,
+                            'defaultDate'=>$model->efemeride,
                         ),
                     )
                 );
@@ -54,10 +61,10 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'direccion'); ?>
-		<?php echo $form->textField($model,'direccion',array('size'=>60,'maxlength'=>300)); ?>
+		<?php echo $form->textArea($model,'direccion',array('rows'=>3,'cols'=>62,'maxlength'=>300)); ?>
 		<?php echo $form->error($model,'direccion'); ?>
 	</div>
-
+        <br>
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar' : 'Editar'); ?>
 	</div>

@@ -21,7 +21,12 @@ class Aviso extends CActiveRecord
 	/**
 	 * @return string the associated database table name
 	 */
-	public function tableName()
+         
+        public $Nombres;
+        public $ApellidoPaterno;
+        public $ApellidoMaterno;
+        
+        public function tableName()
 	{
 		return 'Aviso';
 	}
@@ -40,7 +45,7 @@ class Aviso extends CActiveRecord
 			array('tipoAviso, Persona_codigo', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, fechaInicio, fechaFin, descripcion, observaciones, tipoAviso, Persona_codigo', 'safe', 'on'=>'search'),
+			array('id, fechaInicio, fechaFin, descripcion, observaciones, tipoAviso, Persona_codigo,Nombres,ApellidoPaterno,ApellidoMaterno', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -53,7 +58,7 @@ class Aviso extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'alcanceAvisos' => array(self::HAS_MANY, 'AlcanceAviso', 'Aviso_id'),
-			'personaCodigo' => array(self::BELONGS_TO, 'Persona', 'Persona_codigo'),
+			'personaCodigo' => array(self::BELONGS_TO, 'Persona', 'Persona_codigo'),                 
 		);
 	}
 
@@ -90,6 +95,7 @@ class Aviso extends CActiveRecord
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
 		$criteria=new CDbCriteria;
+                
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('fechaInicio',$this->fechaInicio,true);
@@ -98,6 +104,16 @@ class Aviso extends CActiveRecord
 		$criteria->compare('observaciones',$this->observaciones,true);
 		$criteria->compare('tipoAviso',$this->tipoAviso,true);
 		$criteria->compare('Persona_codigo',$this->Persona_codigo,true);
+                
+                $criteria->with='personaCodigo';
+                $criteria->compare ('personaCodigo.nombres',$this->Nombres,true);
+                $criteria->compare ('personaCodigo.apPat',$this->ApellidoPaterno,true);
+                $criteria->compare ('personaCodigo.apMat',$this->ApellidoMaterno,true);
+                //yo
+                //$criteria->compare('personaCodigo.nombres',$this->Persona_codigo,true); 
+               // $criteria->compare('personaCodigo.apPat',$this->Persona_codigo,true); 
+                //$criteria->compare('personaCodigo.apMat',$this->Persona_codigo,true); 
+                
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

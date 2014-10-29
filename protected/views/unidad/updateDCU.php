@@ -12,6 +12,7 @@ $this->menu=array(
 
 <h2>Editar el Contacto de la Unidad</h2>
 
+<br>
 <div class="form">
     
 <?php
@@ -29,7 +30,7 @@ $this->menu=array(
     <?php echo $form->error($modelDCU,'descripcion')?>
 </div>
 
-
+<br>
 <div class="row buttons">
     <?php echo CHtml::submitButton('Editar');?>
 </div>>

@@ -17,7 +17,15 @@
 
 	<p class="note">Los campos con (<span class="required">*</span>) son requeridos.</p>
 
+        <br>
 	<?php echo $form->errorSummary($model); ?>
+        
+        <div class="row">
+		<?php echo $form->labelEx($model,'tipoAviso'); ?>
+		<?php echo $form->dropDownList($model,'tipoAviso',array('Disposicion'=>'Disposición','Comunicado'=>'Comunicado',
+                    'Consigna'=>'Consigna')); ?>
+		<?php echo $form->error($model,'tipoAviso'); ?>
+	</div>
         
         <div class="row">
 		<?php echo $form->labelEx($model,'Persona_codigo'); ?>
@@ -41,10 +49,14 @@
                         'language'=>'es',
                         'options'=>array(
                             'dateFormat'=>'dd/mm/yy',
-                            'constrainInput'=>'false',
+                            'constrainInput'=>true,
                             'duration'=>'fast',
                             'showAnim'=>'slide',
-                            'constrainInput'=>'true',
+                            'selectOtherMonths'=>true,
+                            'showButtonPanel'=>true,
+                            'showOtherMonths'=>true, 
+                            'changeMonth' => true, 
+                            'changeYear' => true,
                         ),
                     )
                 );
@@ -63,10 +75,14 @@
                         'language'=>'es',
                         'options'=>array(
                             'dateFormat'=>'dd/mm/yy',
-                            'constrainInput'=>'false',
+                            'constrainInput'=>true,
                             'duration'=>'fast',
                             'showAnim'=>'slide',
-                            'constrainInput'=>'true',
+                            'selectOtherMonths'=>true,
+                            'showButtonPanel'=>true,
+                            'showOtherMonths'=>true, 
+                            'changeMonth' => true, 
+                            'changeYear' => true,
                         ),
                     )
                 );
@@ -77,17 +93,11 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'observaciones'); ?>
-		<?php echo $form->textArea($model,'observaciones',array('size'=>60,'maxlength'=>300)); ?>
+		<?php echo $form->textArea($model,'observaciones',array('rows'=>6, 'cols'=>50,'maxlength'=>300)); ?>
 		<?php echo $form->error($model,'observaciones'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'tipoAviso'); ?>
-		<?php echo $form->dropDownList($model,'tipoAviso',array('Disposicion'=>'Disposición','Comunicado'=>'Comunicado',
-                    'Consigna'=>'Consigna')); ?>
-		<?php echo $form->error($model,'tipoAviso'); ?>
-	</div>
-
+        <br>
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar' : 'Editar'); ?>
 	</div>

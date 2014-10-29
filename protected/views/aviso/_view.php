@@ -9,8 +9,13 @@
 	<?php echo CHtml::link(CHtml::encode($data->id), array('view', 'id'=>$data->id)); ?>
 	<br />
         
+        <b><?php echo CHtml::encode($data->getAttributeLabel('tipoAviso')); ?>:</b>
+	<?php echo CHtml::encode($data->tipoAviso); ?>
+	<br />
+        
         <b><?php echo CHtml::encode($data->getAttributeLabel('Persona_codigo')); ?>:</b>
-	<?php echo CHtml::encode($data->Persona_codigo); ?>
+	<?php echo CHtml::encode($data->personaCodigo->grado." ".$data->personaCodigo->especialidad." ".$data->personaCodigo->apPat.
+                           " ".$data->personaCodigo->apMat." ".$data->personaCodigo->nombres ); ?>
 	<br />
         
         <b><?php echo CHtml::encode($data->getAttributeLabel('descripcion')); ?>:</b>
@@ -29,9 +34,7 @@
 	<?php echo CHtml::encode($data->observaciones); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('tipoAviso')); ?>:</b>
-	<?php echo CHtml::encode($data->tipoAviso); ?>
-	<br />
+	
         
         <hr>
         <?php echo CHtml::link(CHtml::encode('ingresar a ALCANDE DEL AVISO'), array('viewAA', 'id'=>$data->id)); ?>

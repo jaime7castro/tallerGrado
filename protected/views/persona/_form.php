@@ -110,14 +110,14 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'especialidad'); ?>
-		<?php echo $form->dropDownList($model,'especialidad',array('Ninguno'=>'Ninguno','DESN'=>'DESN','CEGIM'=>'CEGIM',
+		<?php echo $form->dropDownList($model,'especialidad',array(''=>'Ninguno','DESN'=>'DESN','CEGIM'=>'CEGIM',
                     'CGON'=>'CGON','DEM'=>'DEM','DAEN'=>'DAEN')); ?>
 		<?php echo $form->error($model,'especialidad'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'cargoUnidad'); ?>
-		<?php echo $form->dropDownList($model,'cargoUnidad',array('Ninguno'=>'Ninguno','Dir.'=>'Director','Cmd.'=>'Comandamte','SCmd.'=>'Sub Comandamte','J.Ope.'=>'Jefe de Operaciones',
+		<?php echo $form->dropDownList($model,'cargoUnidad',array(''=>'Ninguno','Dir.'=>'Director','Cmd.'=>'Comandamte','SCmd.'=>'Sub Comandamte','J.Ope.'=>'Jefe de Operaciones',
                     'J.Log.'=>'Jefe de Logistica','J.Per.'=>'Jefe de Personal','Cmd.Cia.'=>'Comandamte de Compañia')); ?>
 		<?php echo $form->error($model,'cargoUnidad'); ?>
 	</div>

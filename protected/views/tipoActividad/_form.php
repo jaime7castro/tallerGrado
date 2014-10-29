@@ -19,12 +19,14 @@
 
 	<?php echo $form->errorSummary($model); ?>
 
+        <br>
 	<div class="row">
 		<?php echo $form->labelEx($model,'descripcion'); ?>
 		<?php echo $form->textField($model,'descripcion',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'descripcion'); ?>
 	</div>
-
+        
+        <br>
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Nuevo' : 'Editar'); ?>
 	</div>

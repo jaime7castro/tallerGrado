@@ -33,29 +33,29 @@
         
         <div class="row">
 		<?php echo $form->labelEx($model,'codigo'); ?>
-		<?php echo $form->textField($model,'codigo',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->textField($model,'codigo',array('size'=>20,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'codigo'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'cantidad'); ?>
-		<?php echo $form->textField($model,'cantidad'); ?>
+		<?php echo $form->textField($model,'cantidad',array('size'=>20)); ?>
 		<?php echo $form->error($model,'cantidad'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'detalle'); ?>
-		<?php echo $form->textField($model,'detalle',array('size'=>60,'maxlength'=>300)); ?>
+		<?php echo $form->textArea($model,'detalle',array('rows'=>3,'cols'=>70,'maxlength'=>300)); ?>
 		<?php echo $form->error($model,'detalle'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'observaciones'); ?>
-		<?php echo $form->textField($model,'observaciones',array('size'=>60,'maxlength'=>300)); ?>
+		<?php echo $form->textArea($model,'observaciones',array('rows'=>3,'cols'=>70,'maxlength'=>300)); ?>
 		<?php echo $form->error($model,'observaciones'); ?>
 	</div>
 
-
+        <br>
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar' : 'Editar'); ?>
 	</div>

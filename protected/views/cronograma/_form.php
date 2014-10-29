@@ -18,7 +18,7 @@
 	<p class="note">Los campos con (<span class="required">*</span>) son requeridos.</p>
 
 	<?php echo $form->errorSummary($model); ?>
-
+        <br>
 	<div class="row">
 		<?php echo $form->labelEx($model,'dia'); ?>
 		<?php echo $form->dropDownList($model,'dia',array('Lunes'=>'lunes','Martes'=>'Martes',
@@ -36,10 +36,14 @@
                         'attribute'=>'fecha',
                         'language'=>'es',
                         'options'=>array(
-                            'dateFormat'=>'dd/mm/yy',
-                            'constrainInput'=>'true',
+                            'constrainInput'=>true,
                             'duration'=>'fast',
                             'showAnim'=>'slide',
+                            'selectOtherMonths'=>true,
+                            'showButtonPanel'=>true,
+                            'showOtherMonths'=>true, 
+                            'changeMonth' => true, 
+                            'changeYear' => true,
                         ),
                     )
                 );
@@ -48,15 +52,18 @@
 		<?php echo $form->error($model,'fecha'); ?>
 	</div>
 
-	<div class="row">
+
+        <div class="row" hidden="true">
 		<?php echo $form->labelEx($model,'Unidad_codigo'); ?>
 		<?php echo $form->dropDownList($model,'Unidad_codigo',CHtml::listData(Unidad::model()->findAll(),'codigo','descripcion')); ?>
 		<?php echo $form->error($model,'Unidad_codigo'); ?>
 	</div>
-
+        
+        <br>
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar' : 'Editar'); ?>
 	</div>
+        
 
 <?php $this->endWidget(); ?>
 

@@ -49,12 +49,32 @@ c&oacute;mo se debe hacer la comparaci&oacute;n .
 	'filter'=>$model,
 	'columns'=>array(
 		'id',
-                'descripcion',
-                'Persona_codigo',
+                array(
+                    'name'=>'tipoAviso',
+                    'value'=>'$data->tipoAviso',
+                    'filter'=> array('Disposicion'=>'Disposición','Comunicado'=>'Comunicado','Consigna'=>'Consigna'), 
+		),
+                array(
+                    'header'=>'Nombres',
+                    'name'=>'Nombres',
+                    'value'=>'$data->personaCodigo->nombres',
+		),
+                array(
+                    'header'=>'Apellido Paterno',
+                    'name'=>'ApellidoPaterno',
+                    'value'=>'$data->personaCodigo->apPat',
+		),
+                array(
+                    'header'=>'Apellido Materno',
+                    'name'=>'ApellidoMaterno',
+                    'value'=>'$data->personaCodigo->apMat',
+		),
+                //'descripcion',
+                //'Persona_codigo',
 		'fechaInicio',
 		'fechaFin',	
-		'observaciones',
-		'tipoAviso',		
+		//'observaciones',
+				
 	
 		array(
 			'class'=>'CButtonColumn',

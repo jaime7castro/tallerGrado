@@ -11,12 +11,13 @@ $this->menu=array(
 ?>
 
 <h2>Editar las Actividades del Cronograma</h2>
-
+<br>
 <div class="form">
     
 <?php
     $form=$this->beginWidget('CActiveForm');?>
         
+    
         <div class="row">
 		<?php echo $form->labelEx($model,'TipoActividad_id'); ?>
 		<?php echo $form->dropDownList($model,'TipoActividad_id',CHtml::listData(TipoActividad::model()->findAll(),'id','descripcion')); ?>
@@ -37,10 +38,11 @@ $this->menu=array(
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'detalle'); ?>
-		<?php echo $form->textArea($model,'detalle',array('size'=>60,'maxlength'=>300)); ?>
+		<?php echo $form->textArea($model,'detalle',array('cols'=>70,'rows'=>3,'maxlength'=>300)); ?>
 		<?php echo $form->error($model,'detalle'); ?>
 	</div>	
 
+        <br>
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Editar'); ?>
 	</div>

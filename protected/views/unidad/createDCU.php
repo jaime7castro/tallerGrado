@@ -18,6 +18,7 @@ $this->menu=array(
 
 <p class="note">Los campos (<span class="required">*</span>) son requeridos.</p>
 
+        <br>
 	<?php echo $form->errorSummary($modelDCU); ?>
         
         <div class="row">
@@ -34,13 +35,14 @@ $this->menu=array(
 	</div>
 	
 
-<div class="row" hidden="true">
+        <div class="row" hidden="true">
 		<?php echo $form->labelEx($modelDCU,'Unidad_codigo'); ?>
                 <?php echo $form->dropDownList($modelDCU,'Unidad_codigo',array($id=>$id)); ?>
 		
 		<?php echo $form->error($modelDCU,'Unidad_codigo'); ?>
 	</div>
 
+        <br> 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Guardar'); ?>
 	</div>

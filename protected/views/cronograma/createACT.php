@@ -18,6 +18,7 @@ $this->menu=array(
 
 <p class="note">Los campos (<span class="required">*</span>) son requeridos.</p>
 
+        <br>
         <div class="row" hidden="true">
 		<?php echo $form->labelEx($model,'Cronograma_id'); ?>
 		<?php echo $form->dropDownList($model,'Cronograma_id',array($id=>$id)); ?>
@@ -44,12 +45,12 @@ $this->menu=array(
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'detalle'); ?>
-		<?php echo $form->textArea($model,'detalle',array('size'=>60,'maxlength'=>300)); ?>
+		<?php echo $form->textArea($model,'detalle',array('cols'=>70,'rows'=>3,'maxlength'=>300)); ?>
 		<?php echo $form->error($model,'detalle'); ?>
 	</div>
 
 	
-
+        <br>
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Guardar'); ?>
 	</div>

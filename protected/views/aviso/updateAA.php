@@ -12,6 +12,7 @@ $this->menu=array(
 
 <h1>Editar Alcance del Aviso</h1>
 
+<br>
 <div class="form">
     
 <?php
@@ -25,7 +26,8 @@ $this->menu=array(
 		<?php echo $form->error($model,'Clase_id'); ?>
 	</div>
 
-
+        <br>
+    
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Editar'); ?>
 	</div>

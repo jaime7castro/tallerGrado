@@ -36,7 +36,12 @@ class ContactForm extends CFormModel
 	public function attributeLabels()
 	{
 		return array(
-			'verifyCode'=>'Verification Code',
+                    'verifyCode'=>'Verificar Código',
+                    'name'=>'Nombre',
+                    'email'=>'Email',
+                    'subject'=>'Asunto',
+                    'body'=>'Mensaje',
+                    'allowEmpty'=>'Permitido espacio en Blanco',
 		);
 	}
 }

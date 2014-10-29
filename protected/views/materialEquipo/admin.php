@@ -49,11 +49,15 @@ c&oacute;mo se debe hacer la comparaci&oacute;n .
 	'filter'=>$model,
 	'columns'=>array(
 		'id',
-		'detalle',
-		'observaciones',
-		'codigo',
+                array(
+                    'name'=>'tipo',
+                    'value'=>'$data->tipo',
+                    'filter'=> array('Interno'=>'Interno','Activo Fijo'=>'Activo Fijo'), 
+		),
+                'codigo',
 		'cantidad',
-		'tipo',
+		'detalle',
+		'observaciones',		
 		/*
 		'Unidad_codigo',
 		*/

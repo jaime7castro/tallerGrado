@@ -32,10 +32,10 @@
 			'items'=>array(
 				array('label'=>'Inicio', 'url'=>array('/site/index')),
 				array('label'=>'Area Naval No. 2', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'Contactenos', 'url'=>array('/site/contact')),
+				array('label'=>'Contáctenos', 'url'=>array('/site/contact')),
 				array('label'=>'Iniciar Sesión', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
-                                array('label'=>'Casos de uso', 'url'=>array('/site/vCasosUso'))
+				array('label'=>'Cerra Sesión ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
+                                array('label'=>'CU', 'url'=>array('/site/vCasosUso'))
                             
 			),
 		)); ?>

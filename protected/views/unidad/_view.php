@@ -21,6 +21,7 @@
 	<?php echo CHtml::encode($data->direccion); ?>
 	<br />
         
+        
          <?php echo CHtml::link(CHtml::encode('ingresar a CONTACTOS'), array('viewDCU', 'id'=>$data->codigo));?>
 
 

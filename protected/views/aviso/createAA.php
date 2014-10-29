@@ -18,6 +18,7 @@ $this->menu=array(
 
 <p class="note">Los campos (<span class="required">*</span>) son requeridos.</p>
 
+<br>
         <?php echo $form->errorSummary($model); ?>
 
 
@@ -32,7 +33,8 @@ $this->menu=array(
 		<?php echo $form->dropDownList($model,'Clase_id',CHtml::listData(Clase::model()->findAll(),'id','descripcion')); ?>
 		<?php echo $form->error($model,'Clase_id'); ?>
 	</div>
-
+        
+        <br>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Guardar'); ?>

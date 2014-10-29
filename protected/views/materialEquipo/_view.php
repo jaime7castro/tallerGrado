@@ -4,14 +4,15 @@
 ?>
 
 <div class="view">
-
+        
 	<b><?php echo CHtml::encode($data->getAttributeLabel('id')); ?>:</b>
 	<?php echo CHtml::link(CHtml::encode($data->id), array('view', 'id'=>$data->id)); ?>
-	<br />
+	<br /> 
         
+        <?php /*
         <b><?php echo CHtml::encode($data->getAttributeLabel('Unidad_codigo')); ?>:</b>
 	<?php echo CHtml::encode($data->Unidad_codigo); ?>
-	<br />
+	<br />*/?>
 
         <b><?php echo CHtml::encode($data->getAttributeLabel('tipo')); ?>:</b>
 	<?php echo CHtml::encode($data->tipo); ?>
