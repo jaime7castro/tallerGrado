@@ -53,8 +53,14 @@ c&oacute;mo se debe hacer la comparaci&oacute;n .
 		'nombres',
 		'apPat',
 		'apMat',
-		'sexo',
+                array(
+                    'header'=>'Sexo',
+                    'name'=>'sexo',
+                    'value'=>'$data->sexo',
+                    'filter'=>array('H'=>'H','M'=>'M'),
+		),
 		/*
+                 * 'sexo',
 		'fechaNac',
 		'edad',
 		'tipoSangre',

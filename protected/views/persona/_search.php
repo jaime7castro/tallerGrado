@@ -12,73 +12,103 @@
 )); ?>
 
 	<div class="row">
-		<?php echo $form->label($model,'codigo'); ?>
-		<?php echo $form->textField($model,'codigo',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->labelEx($model,'codigo'); ?>
+		<?php echo $form->textField($model,'codigo',array('size'=>10,'maxlength'=>45)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'nroCi'); ?>
-		<?php echo $form->textField($model,'nroCi',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->labelEx($model,'nroCi'); ?>
+		<?php echo $form->textField($model,'nroCi',array('size'=>10,'maxlength'=>45)); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'nombres'); ?>
-		<?php echo $form->textField($model,'nombres',array('size'=>45,'maxlength'=>45)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'apPat'); ?>
+        <div class="row">
+		<?php echo $form->labelEx($model,'apPat'); ?>
 		<?php echo $form->textField($model,'apPat',array('size'=>45,'maxlength'=>45)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'apMat'); ?>
+		<?php echo $form->labelEx($model,'apMat'); ?>
 		<?php echo $form->textField($model,'apMat',array('size'=>45,'maxlength'=>45)); ?>
 	</div>
-
+        
 	<div class="row">
-		<?php echo $form->label($model,'sexo'); ?>
-		<?php echo $form->textField($model,'sexo',array('size'=>10,'maxlength'=>10)); ?>
+		<?php echo $form->labelEx($model,'nombres'); ?>
+		<?php echo $form->textField($model,'nombres',array('size'=>45,'maxlength'=>45)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'fechaNac'); ?>
-		<?php echo $form->textField($model,'fechaNac',array('size'=>10,'maxlength'=>10)); ?>
+		<?php echo $form->labelEx($model,'sexo'); ?>
+		<?php echo $form->dropDownList($model,'sexo',array(''=>'--Seleccione--','H'=>'Hombre','M'=>'Mujer')); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'edad'); ?>
-		<?php echo $form->textField($model,'edad'); ?>
+		<?php echo $form->labelEx($model,'fechaNac'); ?>
+		<?php #echo $form->textField($model,'fechaNac',array('size'=>10,'maxlength'=>10)); 
+                $this->widget('zii.widgets.jui.CJuiDatePicker',
+                    array(
+                        'model'=>$model,
+                        'attribute'=>'fechaNac',
+                        'language'=>'es',
+                        'options'=>array(
+                            'dateFormat'=>'dd/mm/yy',
+                            'constrainInput'=>true,
+                            'duration'=>'fast',
+                            'showAnim'=>'slide',
+                            'selectOtherMonths'=>true,
+                            'showButtonPanel'=>true,
+                            'showOtherMonths'=>true, 
+                            'changeMonth' => true, 
+                            'changeYear' => true,
+                            'defaultDate'=>'01/01/1990',
+                        ),
+                    )
+                );
+                
+                ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'tipoSangre'); ?>
-		<?php echo $form->textField($model,'tipoSangre',array('size'=>10,'maxlength'=>10)); ?>
+		<?php echo $form->labelEx($model,'edad'); ?>
+		<?php echo $form->textField($model,'edad',array('size'=>10,'maxlength'=>45)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'direccion'); ?>
-		<?php echo $form->textField($model,'direccion',array('size'=>60,'maxlength'=>300)); ?>
+		<?php echo $form->labelEx($model,'tipoSangre'); ?>
+		<?php echo $form->dropDownList($model,'tipoSangre',array(''=>'--Seleccione--','O(+)'=>'O(+)','A(+)'=>'A(+)',
+                    'B(+)'=>'B(+)','AB(+)'=>'AB(+)','O(-)'=>'O(-)','A(-)'=>'A(-)','B(-)'=>'B(-)','AB(-)'=>'AB(-)')); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'grado'); ?>
-		<?php echo $form->textField($model,'grado',array('size'=>10,'maxlength'=>10)); ?>
+		<?php echo $form->labelEx($model,'direccion'); ?>
+		<?php echo $form->textArea($model,'direccion',array('rows'=>3,'cols'=>62,'maxlength'=>300)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'especialidad'); ?>
-		<?php echo $form->textField($model,'especialidad',array('size'=>10,'maxlength'=>10)); ?>
+		<?php echo $form->labelEx($model,'grado'); ?>
+		<?php echo $form->dropDownList($model,'grado',array(''=>'Ninguno','Marino'=>'Marinero','M2'=>'Marinero de Segunada',
+                    'M1'=>'Marinero de Primera','SI.'=>'Sargento Inicial','S2.'=>'Sargento Segundo',
+                    'S1'=>'Sargento Primero','SM'=>'Sargento Mayor','SOI'=>'Suboficial Inicial',
+                    'SO2'=>'Suboficial Segundo','SO1'=>'Suboficial Primero','SOM'=>'Suboficial Mayor',
+                    'Alf.'=>'Alférez','TF.'=>'Teniente de Fragata','TN.'=>'Teniente de Navio',
+                    'CC.'=>'Capitan de Corveta','CF.'=>'Capitan de Fragata','CN.'=>'Capitan de Navio',
+                    'CAlm.'=>'Contra Almirante','VAlm.'=>'Vice Almirante','Alm'=>'Almirante')); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'cargoUnidad'); ?>
-		<?php echo $form->textField($model,'cargoUnidad',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->labelEx($model,'especialidad'); ?>
+		<?php echo $form->dropDownList($model,'especialidad',array(''=>'Ninguno','DESN'=>'DESN','CEGIM'=>'CEGIM',
+                    'CGON'=>'CGON','DEM'=>'DEM','DAEN'=>'DAEN')); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'Clase_id'); ?>
-		<?php echo $form->textField($model,'Clase_id'); ?>
+		<?php echo $form->labelEx($model,'cargoUnidad'); ?>
+		<?php echo $form->dropDownList($model,'cargoUnidad',array(''=>'Ninguno','Dir.'=>'Director','Cmd.'=>'Comandamte','SCmd.'=>'Sub Comandamte','J.Ope.'=>'Jefe de Operaciones',
+                    'J.Log.'=>'Jefe de Logistica','J.Per.'=>'Jefe de Personal','Cmd.Cia.'=>'Comandamte de Compañia')); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'Clase_id'); ?>
+		<?php echo $form->textField($model,'Clase_id',array('size'=>10,'maxlength'=>45)); ?>
 	</div>
 
 	<div class="row buttons">

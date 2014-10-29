@@ -24,9 +24,9 @@ $this->menu=array(
 	'attributes'=>array(
 		'codigo',
 		'nroCi',
-		'nombres',
-		'apPat',
+                'apPat',
 		'apMat',
+		'nombres',	
 		'sexo',
 		'fechaNac',
 		'edad',
@@ -35,7 +35,10 @@ $this->menu=array(
 		'grado',
 		'especialidad',
 		'cargoUnidad',
-		'Clase_id',
+                array(
+                  'label'=> 'Clase',
+                  'value'=>$model->clase->descripcion, 
+                ),
 	),
 )); 
 ?>

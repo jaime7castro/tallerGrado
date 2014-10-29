@@ -108,12 +108,7 @@ class Aviso extends CActiveRecord
                 $criteria->with='personaCodigo';
                 $criteria->compare ('personaCodigo.nombres',$this->Nombres,true);
                 $criteria->compare ('personaCodigo.apPat',$this->ApellidoPaterno,true);
-                $criteria->compare ('personaCodigo.apMat',$this->ApellidoMaterno,true);
-                //yo
-                //$criteria->compare('personaCodigo.nombres',$this->Persona_codigo,true); 
-               // $criteria->compare('personaCodigo.apPat',$this->Persona_codigo,true); 
-                //$criteria->compare('personaCodigo.apMat',$this->Persona_codigo,true); 
-                
+                $criteria->compare ('personaCodigo.apMat',$this->ApellidoMaterno,true);               
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

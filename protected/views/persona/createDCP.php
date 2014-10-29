@@ -18,6 +18,7 @@ $this->menu=array(
 
 <p class="note">Los campos (<span class="required">*</span>) son requeridos.</p>
 
+        <br>
 	<?php echo $form->errorSummary($modelDCP); ?>
         
         <div class="row">
@@ -40,7 +41,7 @@ $this->menu=array(
 		
 		<?php echo $form->error($modelDCP,'Persona_codigo'); ?>
 	</div>
-
+        <br>
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Guardar'); ?>
 	</div>

@@ -17,27 +17,22 @@
 
 	<p class="note">Los campos con (<span class="required">*</span>) son requeridos.</p>
 
+        <br>
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'codigo'); ?>
-		<?php echo $form->textField($model,'codigo',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->textField($model,'codigo',array('size'=>10,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'codigo'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'nroCi'); ?>
-		<?php echo $form->textField($model,'nroCi',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->textField($model,'nroCi',array('size'=>10,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'nroCi'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'nombres'); ?>
-		<?php echo $form->textField($model,'nombres',array('size'=>45,'maxlength'=>45)); ?>
-		<?php echo $form->error($model,'nombres'); ?>
-	</div>
-
-	<div class="row">
+        <div class="row">
 		<?php echo $form->labelEx($model,'apPat'); ?>
 		<?php echo $form->textField($model,'apPat',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'apPat'); ?>
@@ -47,6 +42,12 @@
 		<?php echo $form->labelEx($model,'apMat'); ?>
 		<?php echo $form->textField($model,'apMat',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'apMat'); ?>
+	</div>
+        
+	<div class="row">
+		<?php echo $form->labelEx($model,'nombres'); ?>
+		<?php echo $form->textField($model,'nombres',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->error($model,'nombres'); ?>
 	</div>
 
 	<div class="row">
@@ -65,10 +66,15 @@
                         'language'=>'es',
                         'options'=>array(
                             'dateFormat'=>'dd/mm/yy',
-                            'constrainInput'=>'false',
+                            'constrainInput'=>true,
                             'duration'=>'fast',
                             'showAnim'=>'slide',
-                            'constrainInput'=>'true',
+                            'selectOtherMonths'=>true,
+                            'showButtonPanel'=>true,
+                            'showOtherMonths'=>true, 
+                            'changeMonth' => true, 
+                            'changeYear' => true,
+                            'defaultDate'=>'01/01/1990',
                         ),
                     )
                 );
@@ -79,7 +85,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'edad'); ?>
-		<?php echo $form->textField($model,'edad'); ?>
+		<?php echo $form->textField($model,'edad',array('size'=>10,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'edad'); ?>
 	</div>
 
@@ -92,7 +98,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'direccion'); ?>
-		<?php echo $form->textField($model,'direccion',array('size'=>60,'maxlength'=>300)); ?>
+		<?php echo $form->textArea($model,'direccion',array('rows'=>3,'cols'=>62,'maxlength'=>300)); ?>
 		<?php echo $form->error($model,'direccion'); ?>
 	</div>
 
@@ -128,6 +134,8 @@
 		<?php echo $form->error($model,'Clase_id'); ?>
 	</div>
 
+        <br>
+        
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar' : 'Editar'); ?>
 	</div>

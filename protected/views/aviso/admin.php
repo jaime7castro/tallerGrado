@@ -55,11 +55,6 @@ c&oacute;mo se debe hacer la comparaci&oacute;n .
                     'filter'=> array('Disposicion'=>'Disposición','Comunicado'=>'Comunicado','Consigna'=>'Consigna'), 
 		),
                 array(
-                    'header'=>'Nombres',
-                    'name'=>'Nombres',
-                    'value'=>'$data->personaCodigo->nombres',
-		),
-                array(
                     'header'=>'Apellido Paterno',
                     'name'=>'ApellidoPaterno',
                     'value'=>'$data->personaCodigo->apPat',
@@ -68,7 +63,13 @@ c&oacute;mo se debe hacer la comparaci&oacute;n .
                     'header'=>'Apellido Materno',
                     'name'=>'ApellidoMaterno',
                     'value'=>'$data->personaCodigo->apMat',
+		),          
+                array(
+                    'header'=>'Nombres',
+                    'name'=>'Nombres',
+                    'value'=>'$data->personaCodigo->nombres',
 		),
+                
                 //'descripcion',
                 //'Persona_codigo',
 		'fechaInicio',

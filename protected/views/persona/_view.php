@@ -25,15 +25,10 @@
 	<?php echo CHtml::encode($data->apMat); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('sexo')); ?>:</b>
-	<?php echo CHtml::encode($data->sexo); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('grado')); ?>:</b>
+	<?php echo CHtml::encode($data->grado); ?>
 	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('fechaNac')); ?>:</b>
-	<?php echo CHtml::encode($data->fechaNac); ?>
-	<br />
-        
-        
+   
         <b><?php echo CHtml::encode($data->getAttributeLabel('Clase_id')); ?>:</b>
 	<?php echo CHtml::encode($data->clase->descripcion); ?>
 	<br />
@@ -46,6 +41,14 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('edad')); ?>:</b>
 	<?php echo CHtml::encode($data->edad); ?>
 	<br />
+        
+        <b><?php echo CHtml::encode($data->getAttributeLabel('sexo')); ?>:</b>
+	<?php echo CHtml::encode($data->sexo); ?>
+	<br />
+
+        <b><?php echo CHtml::encode($data->getAttributeLabel('fechaNac')); ?>:</b>
+	<?php echo CHtml::encode($data->fechaNac); ?>
+	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('tipoSangre')); ?>:</b>
 	<?php echo CHtml::encode($data->tipoSangre); ?>
@@ -53,10 +56,6 @@
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('direccion')); ?>:</b>
 	<?php echo CHtml::encode($data->direccion); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('grado')); ?>:</b>
-	<?php echo CHtml::encode($data->grado); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('especialidad')); ?>:</b>

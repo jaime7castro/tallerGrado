@@ -16,7 +16,7 @@ $this->menu=array(
     
 <?php
     $form=$this->beginWidget('CActiveForm');?>
-
+<br>
 <div>
     <?php echo $form->labelEx($modelDCP,'tipoContacto')?>
     <?php echo $form->dropDownList($modelDCP,'tipoContacto',array('Telefono'=>'Telefono','Celular'=>'Celular',
@@ -29,10 +29,10 @@ $this->menu=array(
     <?php echo $form->error($modelDCP,'descripcion')?>
 </div>
 
-
+<br>
 <div class="row buttons">
     <?php echo CHtml::submitButton('Editar');?>
-</div>>
+</div>
 
 <?php
     $this->endWidget();

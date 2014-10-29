@@ -12,7 +12,7 @@
 )); ?>
 
 	<div class="row">
-		<?php echo $form->label($model,'id'); ?>
+		<?php echo $form->label($model,'id',array('size'=>5)); ?>
 		<?php echo $form->textField($model,'id'); ?>
 	</div>
 

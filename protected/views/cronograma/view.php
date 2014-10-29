@@ -24,7 +24,11 @@ $this->menu=array(
 		'id',
 		'dia',
 		'fecha',
-		'Unidad_codigo',
+                array(
+                  'label'=> 'Unidad',
+                  'value'=>$model->unidadCodigo->descripcion, 
+                ),
+		//'Unidad_codigo',
 	),
 )); ?>
 <?php echo CHtml::link(CHtml::encode('ingresar a las ACTIVIDADES'), array('viewACT', 'id'=>$model->id)); ?>

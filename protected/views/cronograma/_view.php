@@ -17,8 +17,8 @@
 	<?php echo CHtml::encode($data->fecha); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('Unidad_codigo')); ?>:</b>
-	<?php echo CHtml::encode($data->Unidad_codigo); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('Unidad')); ?>:</b>
+	<?php echo CHtml::encode($data->unidadCodigo->descripcion); ?>
 	<br />
         
         <?php echo CHtml::link(CHtml::encode('ingresar a las ACTIVIDADES'), array('viewACT', 'id'=>$data->id)); ?>
