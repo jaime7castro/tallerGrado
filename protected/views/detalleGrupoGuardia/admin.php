@@ -30,11 +30,6 @@ al principio de cada uno de los valores de b&uacute;squeda para especificar
 c&oacute;mo se debe hacer la comparaci&oacute;n . 
 </p>
 
-<?php echo CHtml::link('Busqueda Avanzada','#',array('class'=>'search-button')); ?>
-<div class="search-form" style="display:none">
-<?php $this->renderPartial('_search',array(
-	'model'=>$model,
-)); ?>
 </div><!-- search-form -->
 
 <?php 
@@ -43,22 +38,45 @@ $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'detalle-grupo-guardia-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
+    
+        // esta linea es importante, para que tras updates la extension siga funcionando:
+	'afterAjaxUpdate'=>new CJavaScriptExpression("function(id){ $('#'+id).EEditable(); }"),
 	'columns'=>array(
             
                 //'id'
                 'Persona_codigo',
                 array(
-                  'name'=>'Nombre',
-                  'value'=>'$data->personaCodigo->nombres',
-                ),
+                    'header'=>'CI',
+                    'name'=>'Ci',
+                    'value'=>'$data->personaCodigo->nroCi',
+		),
                 array(
-                  'name'=>'Apellido_Paterno',
-                  'value'=>'$data->personaCodigo->apPat', 
-                ),  
+                    'header'=>'Grado',
+                    'name'=>'Grado',
+                    'value'=>'$data->personaCodigo->grado',
+                    'filter'=>array('Marino'=>'Marinero','M2'=>'Marinero de Segunada',
+                    'M1'=>'Marinero de Primera','SI.'=>'Sargento Inicial','S2.'=>'Sargento Segundo',
+                    'S1'=>'Sargento Primero','SM'=>'Sargento Mayor','SOI'=>'Suboficial Inicial',
+                    'SO2'=>'Suboficial Segundo','SO1'=>'Suboficial Primero','SOM'=>'Suboficial Mayor',
+                    'Alf.'=>'Alférez','TF.'=>'Teniente de Fragata','TN.'=>'Teniente de Navio',
+                    'CC.'=>'Capitan de Corveta','CF.'=>'Capitan de Fragata','CN.'=>'Capitan de Navio',
+                    'CAlm.'=>'Contra Almirante','VAlm.'=>'Vice Almirante','Alm'=>'Almirante'),
+		), 
                 array(
-                  'name'=>'Apellido_Materno',
-                  'value'=>'$data->personaCodigo->apMat',
-                ), 
+                    'header'=>'Apellido Paterno',
+                    'name'=>'ApellidoPaterno',
+                    'value'=>'$data->personaCodigo->apPat',
+		),
+                array(
+                    'header'=>'Apellido Materno',
+                    'name'=>'ApellidoMaterno',
+                    'value'=>'$data->personaCodigo->apMat',
+		),          
+                array(
+                    'header'=>'Nombres',
+                    'name'=>'Nombres',
+                    'value'=>'$data->personaCodigo->nombres',
+		),
                 array('name'=>'GrupoGuardia_id',
                     'value'=>'$data->grupoGuardia->descripcion',
                     'class'=>'EEditableColumn', 'editable_type'=>'select', 

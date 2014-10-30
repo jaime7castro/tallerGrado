@@ -16,7 +16,7 @@ $this->menu=array(
     
 <?php
     $form=$this->beginWidget('CActiveForm');?>
-        
+        <br>
         <?php echo $form->errorSummary($model); ?>
 
         <div class="row">
@@ -42,7 +42,7 @@ $this->menu=array(
 		<?php echo $form->dropDownList($model,'PuestoGuardia_id',CHtml::listData(PuestoGuardia::model()->findAll(),'id','descripcion')); ?>
 		<?php echo $form->error($model,'PuestoGuardia_id'); ?>
 	</div>
-
+        <br>
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Editar'); ?>
 	</div>

@@ -18,9 +18,11 @@ class DetalleGrupoGuardia extends CActiveRecord
 	 * @return string the associated database table name
 	 */
     
-        public $Nombre;
-        public $Apellido_Paterno;
-        public $Apellido_Materno;     
+        public $Ci;
+        public $Grado;
+        public $Nombres;
+        public $ApellidoPaterno;
+        public $ApellidoMaterno;     
     
 	public function tableName()
 	{
@@ -40,7 +42,7 @@ class DetalleGrupoGuardia extends CActiveRecord
 			array('Persona_codigo', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('GrupoGuardia_id, id, Persona_codigo', 'safe', 'on'=>'search'),
+			array('GrupoGuardia_id, id, Persona_codigo,Nombres,ApellidoPaterno,ApellidoMaterno,Ci,Grado', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -90,6 +92,13 @@ class DetalleGrupoGuardia extends CActiveRecord
 		$criteria->compare('GrupoGuardia_id',$this->GrupoGuardia_id);
 		$criteria->compare('id',$this->id);
 		$criteria->compare('Persona_codigo',$this->Persona_codigo,true);
+                //yo
+                $criteria->with='personaCodigo';
+                $criteria->compare ('personaCodigo.nroCi',$this->Ci,true);
+                $criteria->compare ('personaCodigo.grado',$this->Grado,true);
+                $criteria->compare ('personaCodigo.nombres',$this->Nombres,true);
+                $criteria->compare ('personaCodigo.apPat',$this->ApellidoPaterno,true);
+                $criteria->compare ('personaCodigo.apMat',$this->ApellidoMaterno,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

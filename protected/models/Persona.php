@@ -161,5 +161,9 @@ class Persona extends CActiveRecord
             $fullName = $this->apPat." ".$this->apMat." ".$this->nombres;
             return $fullName;
         }
+        public function getFullName2() {
+            $fullName = $this->grado." ".$this->especialidad." ".$this->apPat." ".$this->apMat." ".$this->nombres;
+            return $fullName;
+        }
         
 }

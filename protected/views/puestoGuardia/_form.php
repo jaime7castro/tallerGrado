@@ -16,7 +16,7 @@
 )); ?>
 
 	<p class="note">Los campos con (<span class="required">*</span>) son requeridos.</p>
-
+        <br>
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
@@ -30,7 +30,7 @@
 		<?php echo $form->textField($model,'abreviatura',array('size'=>10,'maxlength'=>10)); ?>
 		<?php echo $form->error($model,'abreviatura'); ?>
 	</div>
-
+        <br>
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar' : 'Editar'); ?>
 	</div>

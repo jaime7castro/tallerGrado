@@ -36,20 +36,24 @@ al principio de cada uno de los valores de b&uacute;squeda para especificar
 c&oacute;mo se debe hacer la comparaci&oacute;n . 
 </p>
 
-<?php echo CHtml::link('Busqueda Avanzada','#',array('class'=>'search-button')); ?>
-<div class="search-form" style="display:none">
-<?php $this->renderPartial('_search',array(
-	'model'=>$model,
-)); ?>
-</div><!-- search-form -->
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'novedad-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
-                'ServicioGuardia_id',
-		'id',
+                //'ServicioGuardia_id',
+                array(
+                    'header'=>'Día',
+                    'name'=>'Dia',
+                    'value'=>'$data->servicioGuardia->dia',
+		),
+                array(
+                    'header'=>'Fecha',
+                    'name'=>'Fecha',
+                    'value'=>'$data->servicioGuardia->fecha',
+		),
+		//'id',
 		'hora',
 		'detalle',		
 		array(

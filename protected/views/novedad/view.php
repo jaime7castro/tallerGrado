@@ -21,9 +21,13 @@ $this->menu=array(
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
-		'id',
+                array(
+                  'label'=> 'Servicio de Guardia',
+                  'value'=>$model->servicioGuardia->dia." ".$model->servicioGuardia->fecha, 
+                ),
+		//'id',
 		'hora',
 		'detalle',
-		'ServicioGuardia_id',
+		
 	),
 )); ?>

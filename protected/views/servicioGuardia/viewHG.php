@@ -29,7 +29,7 @@ $this->menu=array(
     <tr>
         <td><?php echo $rg->id; ?></td>      
         <td><?php echo $rg->Persona_codigo; ?></td>
-        <td><?php echo $rg->personaCodigo->apPat." ".$rg->personaCodigo->apMat." ".$rg->personaCodigo->nombres; ?></td>
+        <td><?php echo $rg->personaCodigo->grado." ".$rg->personaCodigo->especialidad." ".$rg->personaCodigo->apPat." ".$rg->personaCodigo->apMat." ".$rg->personaCodigo->nombres; ?></td>
         <td><?php echo $rg->horaInicio; ?></td>  
         <td><?php echo $rg->horaFin; ?></td>  
         <td><?php echo $rg->puestoGuardia->descripcion; ?></td>

@@ -14,7 +14,7 @@
 	// See class documentation of CActiveForm for details on this.
 	'enableAjaxValidation'=>false,
 )); ?>
-
+        <br>
 	<p class="note">Los campos con (<span class="required">*</span>) son requeridos.</p>
 
 	<?php echo $form->errorSummary($model); ?>
@@ -53,7 +53,7 @@
 		<?php echo $form->dropDownList($model,'GrupoGuardia_id',CHtml::listData(GrupoGuardia::model()->findAll(),'id','descripcion')); ?>
 		<?php echo $form->error($model,'GrupoGuardia_id'); ?>
 	</div>
-
+        <br>
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar' : 'Editar'); ?>
 	</div>

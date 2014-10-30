@@ -17,7 +17,7 @@ $this->menu=array(
     $form=$this->beginWidget('CActiveForm');?>
 
 <p class="note">Los campos (<span class="required">*</span>) son requeridos.</p>
-
+        <br>
         <?php echo $form->errorSummary($model); ?>
 
         <div class="row" hidden="true">
@@ -28,7 +28,7 @@ $this->menu=array(
 
         <div class="row">
 		<?php echo $form->labelEx($model,'Persona'); ?>               
-		<?php echo $form->dropDownList($model,'Persona_codigo',CHtml::listData(Persona::model()->findAll(),"codigo","fullname"),array('prompt'=>'Seleccione...')); ?>
+		<?php echo $form->dropDownList($model,'Persona_codigo',CHtml::listData(Persona::model()->findAll(),"codigo","fullname2"),array('prompt'=>'Seleccione...')); ?>
 		<?php echo $form->error($model,'Persona_codigo'); ?>
 	</div>
 
@@ -43,7 +43,7 @@ $this->menu=array(
             
 		<?php echo $form->error($model,'cargoGuardia'); ?>
 	</div>
-
+        <br>
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Guardar'); ?>
 	</div>

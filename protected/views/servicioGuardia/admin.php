@@ -49,9 +49,18 @@ c&oacute;mo se debe hacer la comparaci&oacute;n .
 	'filter'=>$model,
 	'columns'=>array(
 		'id',
-		'dia',
+		array(
+                    'name'=>'dia',
+                    'value'=>'$data->dia',
+                        'filter'=> array('Lunes'=>'Lunes','Martes'=>'Martes','Miercoles'=>'Miercoles',
+                            'Jueves'=>'Jueves','Viernes'=>'Viernes','Sabado'=>'Sabado','Domingo'=>'Domingo'), 
+		),
 		'fecha',
-		'GrupoGuardia_id',
+                array(
+                    'name'=>'GrupoGuardia_id',
+                    'value'=>'$data->grupoGuardia->descripcion',
+                    'filter'=> array(CHtml::listData(GrupoGuardia::model()->findAll(),'id','descripcion')), 
+		),
 		array(
 			'class'=>'CButtonColumn',
 		),

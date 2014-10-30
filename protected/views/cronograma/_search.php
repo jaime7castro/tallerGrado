@@ -13,13 +13,12 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'id'); ?>
-		<?php echo $form->textField($model,'id',array('size'=>10)); ?>
+		<?php echo $form->textField($model,'id',array('size'=>5)); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'dia'); ?>
-		<?php echo $form->dropDownList($model,'dia',array('Lunes'=>'Lunes','Martes'=>'Martes','Miercoles'=>'Miercoles',
-                            'Jueves'=>'Jueves','Viernes'=>'Viernes','Sabado'=>'Sabado','Domingo'=>'Domingo'));?>
+		<?php echo $form->textField($model,'dia',array('size'=>10,'maxlength'=>10)); ?>
 	</div>
 
 	<div class="row">

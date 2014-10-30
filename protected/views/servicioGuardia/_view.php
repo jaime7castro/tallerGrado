@@ -18,7 +18,7 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('GrupoGuardia_id')); ?>:</b>
-	<?php echo CHtml::encode($data->GrupoGuardia_id); ?>
+	<?php echo CHtml::encode($data->grupoGuardia->descripcion); ?>
 	<br/>
         <hr>
         <?php echo CHtml::link(CHtml::encode('ingresar al ROL DE GUARDIA'), array('viewRG', 'id'=>$data->id)); ?>

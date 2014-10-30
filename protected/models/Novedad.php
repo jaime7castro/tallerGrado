@@ -17,6 +17,9 @@ class Novedad extends CActiveRecord
 	/**
 	 * @return string the associated database table name
 	 */
+    
+         public $Dia;
+         public $Fecha;
 	public function tableName()
 	{
 		return 'Novedad';
@@ -36,7 +39,7 @@ class Novedad extends CActiveRecord
 			array('detalle', 'length', 'max'=>1000),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, hora, detalle, ServicioGuardia_id', 'safe', 'on'=>'search'),
+			array('id, hora, detalle, ServicioGuardia_id,Dia,Fecha', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -87,6 +90,11 @@ class Novedad extends CActiveRecord
 		$criteria->compare('hora',$this->hora,true);
 		$criteria->compare('detalle',$this->detalle,true);
 		$criteria->compare('ServicioGuardia_id',$this->ServicioGuardia_id);
+                
+                $criteria->with='servicioGuardia';
+                $criteria->compare ('servicioGuardia.dia',$this->Dia,true);
+                $criteria->compare ('servicioGuardia.fecha',$this->Fecha,true);
+    
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

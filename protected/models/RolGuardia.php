@@ -62,7 +62,7 @@ class RolGuardia extends CActiveRecord
 			'ServicioGuardia_id' => 'Servicio de Guardia',
 			'id' => 'ID',
 			'cargoGuardia' => 'Cargo en la Guardia',
-			'Persona_codigo' => 'Código de Persona',
+			'Persona_codigo' => 'Código',
 		);
 	}
 

@@ -9,7 +9,7 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'Listar Grupo de Guardia', 'url'=>array('index')),
-	array('label'=>'NUevo Grupo de Guardia', 'url'=>array('create')),
+	array('label'=>'Nuevo Grupo de Guardia', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "

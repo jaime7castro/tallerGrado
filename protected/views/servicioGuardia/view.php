@@ -24,12 +24,15 @@ $this->menu=array(
 		'id',
 		'dia',
 		'fecha',
-		'GrupoGuardia_id',
+		array(
+                  'label'=> 'Grupo de Guardia',
+                  'value'=>$model->grupoGuardia->descripcion, 
+                ),
 	),
 )); ?>
 <hr>
 <?php echo CHtml::link(CHtml::encode('ingresar al ROL DE GUARDIA'), array('viewRG', 'id'=>$model->id)); ?>
-<br>
+<br><br>
 <?php if($model->rolGuardias) {
             echo CHtml::link(CHtml::encode('ingresar al HORARIO DE GUARDIA'), array('viewHG', 'id'=>$model->id));            
       }else{ 

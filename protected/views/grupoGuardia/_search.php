@@ -13,7 +13,7 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'id'); ?>
-		<?php echo $form->textField($model,'id'); ?>
+		<?php echo $form->textField($model,'id',array('size'=>5)); ?>
 	</div>
 
 	<div class="row">
@@ -28,7 +28,7 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'lema'); ?>
-		<?php echo $form->textField($model,'lema',array('size'=>60,'maxlength'=>300)); ?>
+		<?php echo $form->textArea($model,'lema',array('rows'=>3,'cols'=>62,'maxlength'=>300)); ?>
 	</div>
 
 	<div class="row buttons">

@@ -28,7 +28,8 @@ $this->menu=array(
         <td><?php echo $rg->id; ?></td>
         
         <td><?php echo $rg->Persona_codigo; ?></td>
-        <td><?php echo $rg->personaCodigo->apPat." ".$rg->personaCodigo->apMat." ".$rg->personaCodigo->nombres; ?></td>
+        <td><?php echo $rg->personaCodigo->grado." ".$rg->personaCodigo->especialidad." ".$rg->personaCodigo->apPat." ".
+                $rg->personaCodigo->apMat." ".$rg->personaCodigo->nombres; ?></td>
         <td><?php echo $rg->cargoGuardia; ?></td>
         <td><?php echo CHtml::link('Editar',array('updateRG','id'=>$rg->id));?></td>
         <td><?php echo CHtml::link('Eliminar',array('deleteRG','id'=>$rg->id),array('confirm'=>'Está seguro que desea eliminar éste Rol de Guardia?'));?></td>

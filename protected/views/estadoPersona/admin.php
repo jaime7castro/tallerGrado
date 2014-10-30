@@ -40,8 +40,8 @@ $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'estado-persona-grid',
 	'dataProvider'=>$model->search(),  
         // esta linea es importante, para que tras updates la extension siga funcionando:
-		'afterAjaxUpdate'=>new CJavaScriptExpression("function(id){ $('#'+id).EEditable(); }"),
-        'filter'=>$model,
+	'afterAjaxUpdate'=>new CJavaScriptExpression("function(id){ $('#'+id).EEditable(); }"),
+        'filter'=>$model,  
 	'columns'=>array(
                 //'id',
                 /*array(

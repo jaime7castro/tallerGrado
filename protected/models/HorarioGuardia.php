@@ -68,7 +68,7 @@ class HorarioGuardia extends CActiveRecord
 			'id' => 'ID',
 			'horaInicio' => 'Hora Inicio',
 			'horaFin' => 'Hora Fin',
-			'Persona_codigo' => 'Código de Persona',
+			'Persona_codigo' => 'Código',
 			'PuestoGuardia_id' => 'Puesto de Guardia',
 		);
 	}

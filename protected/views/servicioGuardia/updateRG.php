@@ -16,7 +16,7 @@ $this->menu=array(
     
 <?php
     $form=$this->beginWidget('CActiveForm');?>
-        
+        <br>
         <?php echo $form->errorSummary($model); ?>
 
         <div class="row">
@@ -36,7 +36,7 @@ $this->menu=array(
             
 		<?php echo $form->error($model,'cargoGuardia'); ?>
 	</div>	
-
+        <br>
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Editar'); ?>
 	</div>

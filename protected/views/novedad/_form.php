@@ -16,7 +16,7 @@
 )); ?>
 
 	<p class="note">Los campos con (<span class="required">*</span>) son requeridos.</p>
-
+        <br>
 	<?php echo $form->errorSummary($model); ?>
 
         <div class="row">
@@ -33,11 +33,11 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'detalle'); ?>
-		<?php echo $form->textArea($model,'detalle',array('size'=>60,'maxlength'=>1000)); ?>
+		<?php echo $form->textArea($model,'detalle',array('rows'=>10,'cols'=>80,'maxlength'=>1000)); ?>
 		<?php echo $form->error($model,'detalle'); ?>
 	</div>
 
-	
+	<br>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar' : 'Editar'); ?>

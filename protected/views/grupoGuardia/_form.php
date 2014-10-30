@@ -14,7 +14,7 @@
 	// See class documentation of CActiveForm for details on this.
 	'enableAjaxValidation'=>false,
 )); ?>
-
+        <br>
 	<p class="note">Los campos con (<span class="required">*</span>) son requeridos.</p>
 
 	<?php echo $form->errorSummary($model); ?>
@@ -33,10 +33,10 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'lema'); ?>
-		<?php echo $form->textField($model,'lema',array('size'=>60,'maxlength'=>300)); ?>
+		<?php echo $form->textArea($model,'lema',array('rows'=>3,'cols'=>62,'maxlength'=>300)); ?>
 		<?php echo $form->error($model,'lema'); ?>
 	</div>
-
+        <br>
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar' : 'Editar'); ?>
 	</div>
