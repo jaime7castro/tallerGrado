@@ -17,3 +17,4 @@ $this->pageTitle=Yii::app()->name;
     <a href="http://www.armada.mil.bo/">Armada Boliviana</a>,
     y adientrese a nuestro barco.</p>
 </center>
+

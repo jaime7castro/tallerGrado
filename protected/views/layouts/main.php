@@ -33,10 +33,13 @@
 				array('label'=>'Inicio', 'url'=>array('/site/index')),
 				array('label'=>'Area Naval No. 2', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Contáctenos', 'url'=>array('/site/contact')),
-				array('label'=>'Iniciar Sesión', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Cerra Sesión ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
-                                array('label'=>'CU', 'url'=>array('/site/vCasosUso'))
-                            
+                            ////////
+                                array('label'=>'Login', 'url'=>Yii::app()->user->ui->loginUrl, 'visible'=>Yii::app()->user->isGuest),
+				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>Yii::app()->user->ui->logoutUrl, 'visible'=>!Yii::app()->user->isGuest),
+				//array('label'=>'Iniciar Sesión', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+				//array('label'=>'Cerra Sesión ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
+                                array('label'=>'CU', 'url'=>array('/site/vCasosUso')),
+                                array('label'=>'Administrar Usuarios','url'=>Yii::app()->user->ui->userManagementAdminUrl, 'visible'=>!Yii::app()->user->isGuest),
 			),
 		)); ?>
 	</div><!-- mainmenu -->
@@ -57,6 +60,6 @@
 	</div><!-- footer -->
 
 </div><!-- page -->
-
+<?php echo Yii::app()->user->ui->displayErrorConsole();?>
 </body>
 </html>

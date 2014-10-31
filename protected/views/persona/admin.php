@@ -59,6 +59,8 @@ c&oacute;mo se debe hacer la comparaci&oacute;n .
                     'value'=>'$data->sexo',
                     'filter'=>array('H'=>'H','M'=>'M'),
 		),
+                'email',
+
 		/*
                  * 'sexo',
 		'fechaNac',

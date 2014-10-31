@@ -101,6 +101,12 @@
 		<?php echo $form->textArea($model,'direccion',array('rows'=>3,'cols'=>62,'maxlength'=>300)); ?>
 		<?php echo $form->error($model,'direccion'); ?>
 	</div>
+        
+        <div class="row">
+		<?php echo $form->labelEx($model,'email'); ?>
+		<?php echo $form->textField($model,'email',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->error($model,'email'); ?>
+	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'grado'); ?>

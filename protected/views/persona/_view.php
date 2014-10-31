@@ -24,6 +24,10 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('apMat')); ?>:</b>
 	<?php echo CHtml::encode($data->apMat); ?>
 	<br />
+        
+        <b><?php echo CHtml::encode($data->getAttributeLabel('email')); ?>:</b>
+	<?php echo CHtml::encode($data->email); ?>
+	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('grado')); ?>:</b>
 	<?php echo CHtml::encode($data->grado); ?>

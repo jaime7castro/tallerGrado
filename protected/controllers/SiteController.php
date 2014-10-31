@@ -116,4 +116,9 @@ class SiteController extends Controller
         public function actionTipoActividad(){
             $this->render('../tipoActividad/index');
         }
+        //////////////////////////
+        public function filters()
+        {
+            return array(array('CrugeAccessControlFilter'));
+        }
 }

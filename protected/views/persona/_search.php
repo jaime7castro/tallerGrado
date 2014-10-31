@@ -82,6 +82,11 @@
 		<?php echo $form->labelEx($model,'direccion'); ?>
 		<?php echo $form->textArea($model,'direccion',array('rows'=>3,'cols'=>62,'maxlength'=>300)); ?>
 	</div>
+    
+        <div class="row">
+		<?php echo $form->labelEx($model,'email'); ?>
+		<?php echo $form->textField($model,'email',array('size'=>45,'maxlength'=>45)); ?>
+	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'grado'); ?>
@@ -108,7 +113,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'Clase_id'); ?>
-		<?php echo $form->textField($model,'Clase_id',array('size'=>10,'maxlength'=>45)); ?>
+		<?php echo $form->dropDownList($model,'Clase_id',CHtml::listData(Clase::model()->findAll(),'id','descripcion'),array('prompt'=>'Seleccione...')); ?>
 	</div>
 
 	<div class="row buttons">

@@ -21,10 +21,8 @@
  *
  * The followings are the available model relations:
  * @property Aviso[] $avisos
- * @property CuentaUsuario[] $cuentaUsuarios
  * @property DetalleContactoP[] $detalleContactoPs
  * @property DetalleGrupoGuardia[] $detalleGrupoGuardias
- * @property DetallePrivilegioPer[] $detallePrivilegioPers
  * @property Estado[] $estados
  * @property HorarioGuardia[] $horarioGuardias
  * @property Clase $clase
@@ -35,6 +33,8 @@ class Persona extends CActiveRecord
 	/**
 	 * @return string the associated database table name
 	 */
+    
+        public $CuentaUsuario;
 	public function tableName()
 	{
 		return 'Persona';
@@ -50,13 +50,13 @@ class Persona extends CActiveRecord
 		return array(
 			array('codigo, nroCi, nombres, apPat, sexo, fechaNac, edad, tipoSangre, Clase_id', 'required'),
 			array('edad, Clase_id', 'numerical', 'integerOnly'=>true),
-			array('codigo, nroCi, nombres, apPat, apMat', 'length', 'max'=>45),
+			array('codigo, nroCi, nombres, apPat, apMat,email', 'length', 'max'=>45),
 			array('sexo, fechaNac, tipoSangre, grado, especialidad', 'length', 'max'=>10),
 			array('direccion', 'length', 'max'=>300),
 			array('cargoUnidad', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('codigo, nroCi, nombres, apPat, apMat, sexo, fechaNac, edad, tipoSangre, direccion, grado, especialidad, cargoUnidad, Clase_id', 'safe', 'on'=>'search'),
+			array('codigo, nroCi, nombres, apPat, apMat, sexo, fechaNac, edad, tipoSangre, direccion,email, grado, especialidad, cargoUnidad, Clase_id,CuentaUsuario', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -68,15 +68,14 @@ class Persona extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'avisos' => array(self::HAS_MANY, 'Aviso', 'Persona_codigo'),
-			'cuentaUsuarios' => array(self::HAS_MANY, 'CuentaUsuario', 'Persona_codigo'),
+			'avisos' => array(self::HAS_MANY, 'Aviso', 'Persona_codigo'),	
 			'detalleContactoPs' => array(self::HAS_MANY, 'DetalleContactoP', 'Persona_codigo'),
 			'detalleGrupoGuardias' => array(self::HAS_MANY, 'DetalleGrupoGuardia', 'Persona_codigo'),
-			'detallePrivilegioPers' => array(self::HAS_MANY, 'DetallePrivilegioPer', 'Persona_codigo'),
 			'estados' => array(self::MANY_MANY, 'Estado', 'Estado_Persona(Persona_codigo, Estado_id)'),
 			'horarioGuardias' => array(self::HAS_MANY, 'HorarioGuardia', 'Persona_codigo'),
 			'clase' => array(self::BELONGS_TO, 'Clase', 'Clase_id'),
 			'rolGuardias' => array(self::HAS_MANY, 'RolGuardia', 'Persona_codigo'),
+                        'cuentaUsuario' => array(self::HAS_MANY, 'CrugeStoredUser', 'Persona_codigo'),
 		);
 	}
 
@@ -96,6 +95,7 @@ class Persona extends CActiveRecord
 			'edad' => 'Edad',
 			'tipoSangre' => 'Grupo Sanguineo',
 			'direccion' => 'Dirección',
+                        'email' => 'Correo Electrónico',
 			'grado' => 'Grado',
 			'especialidad' => 'Especialidad',
 			'cargoUnidad' => 'Cargo en la Unidad',
@@ -131,10 +131,15 @@ class Persona extends CActiveRecord
 		$criteria->compare('edad',$this->edad);
 		$criteria->compare('tipoSangre',$this->tipoSangre,true);
 		$criteria->compare('direccion',$this->direccion,true);
+                $criteria->compare('email',$this->email,true);
 		$criteria->compare('grado',$this->grado,true);
 		$criteria->compare('especialidad',$this->especialidad,true);
 		$criteria->compare('cargoUnidad',$this->cargoUnidad,true);
 		$criteria->compare('Clase_id',$this->Clase_id);
+                
+                //yo
+                //$criteria->with='cuentaUsuario';
+                //$criteria->compare ('cuentaUsuario.username',$this->CuentaUsuario,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

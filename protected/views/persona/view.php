@@ -32,6 +32,7 @@ $this->menu=array(
 		'edad',
 		'tipoSangre',
 		'direccion',
+                'email',
 		'grado',
 		'especialidad',
 		'cargoUnidad',
