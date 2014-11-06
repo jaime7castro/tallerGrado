@@ -2,9 +2,6 @@
 /* @var $this SiteController */
 
 $this->pageTitle=Yii::app()->name . ' - About';
-$this->breadcrumbs=array(
-	'AREA NAVAL 2',
-);
 ?>
 
 <center><h1>ÁREA NAVAL No. 2 SC</h1></center>

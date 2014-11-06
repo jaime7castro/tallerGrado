@@ -15,7 +15,7 @@ $this->menu=array(
 
 <?php if($detalleContactoU) {?>
    
-<table>
+<table class="miGrid">
     <tr>
         <th>Id</th>
         <th>Tipo de Contacto</th>

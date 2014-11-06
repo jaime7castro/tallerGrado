@@ -41,7 +41,7 @@ class PersonaController extends Controller
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete','deleteDCP'),
+				'actions'=>array('admin','pdf','delete','deleteDCP'),
 				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -208,5 +208,12 @@ class PersonaController extends Controller
             $modelDCP=  DetalleContactoP::model()->findByPk($id);
             $modelDCP->delete();
             $this->redirect(array('viewDCP','id'=>$modelDCP->Persona_codigo));
+        }
+        
+        public function actionExcel()
+        {
+            $model=  Persona::model()->findAll();
+            Yii::app()->request->sendFile('reportePersona.xls',
+                    $this->renderPartial('excel',array('model'=>$model),true));
         }
 }

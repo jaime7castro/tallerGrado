@@ -15,7 +15,7 @@ $this->menu=array(
 
 <?php if($actividad) {?>
    
-<table>
+<table class="miGrid">
     <tr>
         <th>Id</th>
         <th>Actividad</th>

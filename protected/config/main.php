@@ -108,16 +108,19 @@ return array(
 			'loginUrl' => array('/cruge/ui/login'),
 		),
 		// uncomment the following to enable URLs in path-format
-		/*
+		
+            //URL AMIGABLES
+            /*
 		'urlManager'=>array(
 			'urlFormat'=>'path',
+                        'showScriptName'=>false,
 			'rules'=>array(
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
-		),
-		*/
+		),*/
+		
 		'db'=>array(
 			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
 		),
@@ -140,23 +143,68 @@ return array(
 			'routes'=>array(
 				array(
 					'class'=>'CFileLogRoute',
-					'levels'=>'error, warning',
+                                        //'enabled'=>YII_DEBUG, CUANDO ES PRODUCCION
+					//'levels'=>'error, warning,trace info,profile',
+                                        'filter'=>'CLogFilter',
 				),
 				// uncomment the following to show log messages on web pages
-				/*
+				
 				array(
 					'class'=>'CWebLogRoute',
+                                        'enabled'=>false, //si es falso es como comentado
+                                        'levels'=>'error, warning,trace info,profile',
+                                        'filter'=>'CLogFilter',
+                                        'categories'=>'system.*',
+				),/*
+                                array(  //guarda en la bese de datos
+					'class'=>'CDbLogRoute',
+                                        'enabled'=>true, 
+                                        'levels'=>'error, warning,trace info,profile',
 				),
-				*/
+				array(
+					'class'=>'CEmailLogRoute',
+                                        'enabled'=>true, 
+                                        'levels'=>'error, warning,trace info,profile',
+				),
+                                array(
+					'class'=>'CProfileLogRoute',
+                                        'enabled'=>true, 
+                                        'levels'=>'error, warning,trace info,profile',
+				),*/
 			),
 		),
+                
+            /////////////WIDGETS////////
+        
+                'widgetFactory'=>array(
+                'widgets'=>array(
+                    'CGridView'=>array(
+                        'cssFile'=>false,
+                        //'pager'=>array('cssFile'=>false),
+                        //'pagerCssClass'=>'paginator',
+                        //'rowCssClass'=>array('light','dark'),      
+                    ),
+                    'CListView'=>array(
+                        'cssFile'=>false,
+                        //'pager'=>array('cssFile'=>false),
+                        //'pagerCssClass'=>'paginator',
+                        //'rowCssClass'=>array('light','dark'),      
+                    ),
+                    'CDetailView'=>array(
+                        'cssFile'=>false,
+                        //'pager'=>array('cssFile'=>false),
+                        //'pagerCssClass'=>'paginator',
+                        //'rowCssClass'=>array('light','dark'),      
+                    ),
+                )
+                ),
             //-----------------------//
             'authManager' => array(
                     'class' => 'application.modules.cruge.components.CrugeAuthManager',
             ),
             'crugemailer'=>array(
                     'class' => 'application.modules.cruge.components.CrugeMailer',
-                    'mailfrom' => 'jaime7castro@gmail.com.bo',
+                    'mailfrom' => 'jaime7castro@gmail.com',
                     'subjectprefix' => 'Mensaje de Adm. Area Naval Nro. 2',
                     'debug' => true,
             ),
@@ -174,4 +222,8 @@ return array(
 		// this is used in contact page
 		'adminEmail'=>'jaime@grupocastro.com.bo',
 	),
+    
+        
+    
+        'theme'=>'rhea',
 );

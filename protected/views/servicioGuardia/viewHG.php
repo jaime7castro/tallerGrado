@@ -14,7 +14,7 @@ $this->menu=array(
 
 
 <?php if($model) {?>
-<table>
+<table class="miGrid">
     <tr>
         <th>ID</th>
         <th>Código de Persona</th>

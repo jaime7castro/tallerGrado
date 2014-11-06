@@ -4,9 +4,7 @@
 /* @var $form CActiveForm */
 
 $this->pageTitle=Yii::app()->name . ' - Contact Us';
-$this->breadcrumbs=array(
-	'CONTÁCTENOS',
-);
+
 ?>
 
 <h1>Contáctenos</h1>

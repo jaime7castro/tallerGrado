@@ -18,6 +18,10 @@ class TipoActividadController extends Controller
 			'postOnly + delete', // we only allow deletion via POST request
 		);
 	}*/
+        public function filters()
+        {
+            return array(array('CrugeAccessControlFilter'));
+        }
 
 	/**
 	 * Specifies the access control rules.

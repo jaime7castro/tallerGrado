@@ -14,7 +14,7 @@ $this->menu=array(
 
 
 <?php if($model) {?>
-<table>
+<table class="miGrid">
     <tr>
         <th>ID</th>
         <th>Aviso</th>
@@ -27,8 +27,8 @@ $this->menu=array(
         <td><?php echo $rg->id; ?></td>      
         <td><?php echo $rg->Aviso_id; ?></td> 
         <td><?php echo $rg->clase->descripcion; ?></td>
-        <td><?php echo CHtml::link('Editar',array('updateAA','id'=>$rg->id));?></td>
-        <td><?php echo CHtml::link('Eliminar',array('deleteAA','id'=>$rg->id),array('confirm'=>'Está seguro que desea eliminar éste Alcance?'));?></td>
+        <td class="edit"><?php echo CHtml::link('Editar',array('updateAA','id'=>$rg->id));?></td>
+        <td class="delete"><?php echo CHtml::link('Eliminar',array('deleteAA','id'=>$rg->id),array('confirm'=>'Está seguro que desea eliminar éste Alcance?'));?></td>
     </tr>
     <?php } ?>
 </table>

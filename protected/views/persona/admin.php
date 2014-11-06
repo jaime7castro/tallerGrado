@@ -10,6 +10,7 @@ $this->breadcrumbs=array(
 $this->menu=array(
 	array('label'=>'Listar Persona', 'url'=>array('index')),
 	array('label'=>'Nueva Persona', 'url'=>array('create')),
+        array('label'=>'Exportar a Excel', 'url'=>array('excel')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -46,7 +47,7 @@ c&oacute;mo se debe hacer la comparaci&oacute;n .
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'persona-grid',
 	'dataProvider'=>$model->search(),
-	'filter'=>$model,
+	'filter'=>$model,     
 	'columns'=>array(
 		'codigo',
 		'nroCi',
